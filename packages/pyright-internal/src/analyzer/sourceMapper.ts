@@ -62,6 +62,18 @@ export class SourceMapper {
         private _fromFile: SourceFileInfo | undefined,
         private _cancelToken: CancellationToken
     ) {}
+    printDetails(): void {
+        console.log("SourceMapper Details:");
+        console.log("Import Resolver:", this._importResolver);
+        console.log("Execution Environment:", this._execEnv);
+        console.log("Type Evaluator:", this._evaluator);
+        console.log("File Binder:", this._fileBinder);
+        console.log("Bound Source Getter:", this._boundSourceGetter);
+        console.log("Map Compiled:", this._mapCompiled);
+        console.log("Prefer Stubs:", this._preferStubs);
+        console.log("From File:", this._fromFile);
+        console.log("Cancel Token:", this._cancelToken);
+    }
 
     findModules(stubFileUri: Uri): ModuleNode[] {
         const sourceFiles = this._isStubThatShouldBeMappedToImplementation(stubFileUri)

@@ -908,7 +908,10 @@ export class SourceFile {
         this._console.info(
             `[SourceFile.check] +++ Starting type check for file: ${this._uri.toUserVisibleString()} +++`
         ); // Your new log line
-
+        // log the source mapper
+        this._console.info(
+            `[SourceFile.check] SourceMapper: ${dependentFiles ? dependentFiles.length : 0} dependent files`
+        ); // Your new log line
         return this._logTracker.log(`checking: ${this._getPathForLogging(this._uri)}`, () => {
             try {
                 timingStats.typeCheckerTime.timeOperation(() => {

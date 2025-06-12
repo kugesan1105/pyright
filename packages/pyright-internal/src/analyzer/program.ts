@@ -1825,6 +1825,11 @@ export class Program {
                     importedSymbols: undefined,
                 }
             );
+            this._console.info(
+                `[Copilot Debug] Program._lookUpImport: Looking up import ${fileUriOrModule.nameParts.join(
+                    '.'
+                )} from ${fileUriOrModule.importingFileUri.toString()}`
+            );
 
             if (importResult.isImportFound && !importResult.isNativeLib && importResult.resolvedUris.length > 0) {
                 const resolvedPath = importResult.resolvedUris[importResult.resolvedUris.length - 1];
