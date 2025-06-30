@@ -8,6 +8,13 @@
  * and all of their recursive imports.
  */
 
+
+function printStackTrace(): void {
+    const err = new Error("Stack trace");
+    console.log(err.stack);
+}
+
+
 import { CancellationToken } from 'vscode-languageserver';
 
 import { TextDocument } from 'vscode-languageserver-textdocument';
@@ -285,7 +292,7 @@ export class Program {
                 }
             });
         }
-        console.log('setTrackedFiles 288');
+        console.log('/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:288 --> setTrackedFiles');
         // Add the new files. Only the new items will be added.
         this.addTrackedFiles(fileUris);
 
@@ -308,7 +315,7 @@ export class Program {
     }
 
     addTrackedFiles(fileUris: Uri[], isThirdPartyImport = false, isInPyTypedPackage = false) {
-        console.log('addTrackedFiles 311');
+        console.log('/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:311 --> addTrackedFiles');
         fileUris.forEach((fileUri) => {
             this.addTrackedFile(fileUri, isThirdPartyImport, isInPyTypedPackage);
         });
@@ -327,7 +334,7 @@ export class Program {
 
     addTrackedFile(fileUri: Uri, isThirdPartyImport = false, isInPyTypedPackage = false): SourceFile {
         let sourceFileInfo = this.getSourceFileInfo(fileUri);
-        console.log('addTrackedFile 329');
+        console.log('/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:330 --> addTrackedFile');
 
         const moduleImportInfo = this._getModuleImportInfoForFile(fileUri);
         const importName = moduleImportInfo.moduleName;
@@ -638,7 +645,7 @@ export class Program {
     // to the smaller value to maintain responsiveness.
     // JAC_STEP_01
     analyze(maxTime?: MaxAnalysisTime, token: CancellationToken = CancellationToken.None): boolean {
-        console.log('HIiiii 11111 analyze', this._sourceFileList.length, 'files');
+        console.log('/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:641 --> analyze');
         return this._runEvaluatorWithCancellationToken(token, () => {
             const elapsedTime = new Duration();
 
@@ -987,6 +994,7 @@ export class Program {
     }
 
     clone() {
+        console.log("/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:991 --> clone");
         const program = new Program(
             this._importResolver,
             this._configOptions,
@@ -1368,11 +1376,11 @@ export class Program {
         const imports = sourceFileInfo.sourceFile.getImports();
         // console.log('get imports', imports);
         // imports is a list of ImportResult objects so i just want to print the importName of all of them
-        // for (const importResult of imports) {
-        //     console.log(
-        //         `Import: ${importResult.importName}, type: ${importResult.importType}, found: ${importResult.isImportFound}`
-        //     );
-        // }
+        for (const importResult of imports) {
+            console.log(
+                `\tImport: ${importResult.importName}, type: ${importResult.importType}, found: ${importResult.isImportFound}`
+            );
+        }
         // Create a local function that determines whether the import should
         // be considered a "third-party import" and whether it is coming from
         // a third-party package that claims to be typed. An import is
@@ -1507,7 +1515,7 @@ export class Program {
                 // of the program.
                 let importedFileInfo = this.getSourceFileInfo(importInfo.path);
                 if (!importedFileInfo) {
-                    console.log('_updateSourceFileImports, --> newImportPathMap.', 1496);
+                    console.log('/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:1510 --> _updateSourceFileImports');
 
                     const moduleImportInfo = this._getModuleImportInfoForFile(importInfo.path);
                     const sourceFile = this._sourceFileFactory.createSourceFile(
@@ -1590,10 +1598,7 @@ export class Program {
 
     private _getModuleImportInfoForFile(fileUri: Uri) {
         // 22013;
-        console.log(
-            '[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for\n',
-            fileUri.toString()
-        );
+        console.log('/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:1593 --> _getModuleImportInfoForFile');
         // We allow illegal module names (e.g. names that include "-" in them)
         // because we want a unique name for each module even if it cannot be
         // imported through an "import" statement. It's important to have a
@@ -1781,7 +1786,7 @@ export class Program {
         skipFileNeededCheck = false,
         isImplicitImport = false
     ): boolean {
-        console.log('bind file 1778 program.ts ', fileToBind.uri.toString());
+        console.log('/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:1782 --> _bindFile::', fileToBind.uri.toString());
         if (!this._isFileNeeded(fileToBind, skipFileNeededCheck) || !fileToBind.sourceFile.isBindingRequired()) {
             return !fileToBind.sourceFile.isBindingRequired();
         }
@@ -1858,6 +1863,8 @@ export class Program {
         options?: LookupImportOptions
     ): ImportLookupResult | undefined => {
         let sourceFileInfo: SourceFileInfo | undefined;
+        printStackTrace();
+        console.log(`/home/mgtm/pyright/packages/pyright-internal/src/analyzer/program.ts:1859 --> _lookUpImport::${fileUriOrModule.toString()}`);
         if (Uri.is(fileUriOrModule)) {
             sourceFileInfo = this.getSourceFileInfo(fileUriOrModule);
         } else {

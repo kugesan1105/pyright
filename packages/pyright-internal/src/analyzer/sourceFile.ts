@@ -49,6 +49,11 @@ import { SymbolTable } from './symbol';
 import { TestWalker } from './testWalker';
 import { TypeEvaluator } from './typeEvaluatorTypes';
 
+function printStackTrace(): void {
+    const err = new Error("Stack trace");
+    console.log(err.stack);
+}
+
 // Limit the number of import cycles tracked per source file.
 const _maxImportCyclesPerFile = 4;
 
@@ -638,10 +643,12 @@ export class SourceFile {
     // (or at least cancel) prior to calling again. It returns true if a parse
     // was required and false if the parse information was up to date already.
     parse(configOptions: ConfigOptions, importResolver: ImportResolver, content?: string): boolean {
-        console.log(`[SourceFile.parse] Parsing file: ${this._uri.toUserVisibleString()}`);
+        console.log(`/home/mgtm/pyright/packages/pyright-internal/src/analyzer/sourceFile.ts:641 --> parse::Parsing file: ${this._uri.toUserVisibleString()}`);
+        // printStackTrace();
         return this._logTracker.log(`parsing: ${this._getPathForLogging(this._uri)}`, (logState) => {
             // If the file is already parsed, we can skip.
             if (!this.isParseRequired()) {
+                console.log(`\t\tparse not required for ${this._uri.toUserVisibleString()}`);
                 logState.suppress();
                 return false;
             }
