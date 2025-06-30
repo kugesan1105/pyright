@@ -1,0 +1,1037 @@
+Using root directory: /home/kuggix/pyright/packages/pyright/dist/
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+undefined
+Loading configuration file at /home/kuggix/pyright/packages/pyright/pyrightconfig.json
+Auto-excluding **/node_modules
+Auto-excluding **/__pycache__
+Auto-excluding **/.*
+Assuming Python version 3.12.9.final.0
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+{
+  runWithCancellationToken: [Function: bound timeOperation],
+  getType: [Function: bound timeOperation],
+  getTypeResult: [Function: bound timeOperation],
+  getTypeResultForDecorator: [Function: bound timeOperation],
+  getCachedType: [Function: bound timeOperation],
+  getTypeOfExpression: [Function: bound timeOperation],
+  getTypeOfAnnotation: [Function: bound timeOperation],
+  getTypeOfClass: [Function: bound timeOperation],
+  createSubclass: [Function: bound timeOperation],
+  getTypeOfFunction: [Function: bound timeOperation],
+  getTypeOfExpressionExpectingType: [Function: bound timeOperation],
+  getExpectedType: [Function: bound timeOperation],
+  evaluateTypeForSubnode: [Function: bound timeOperation],
+  evaluateTypesForStatement: [Function: bound timeOperation],
+  evaluateTypesForMatchStatement: [Function: bound timeOperation],
+  evaluateTypesForCaseStatement: [Function: bound timeOperation],
+  evaluateTypeOfParam: [Function: bound timeOperation],
+  canBeTruthy: [Function: bound timeOperation],
+  canBeFalsy: [Function: bound timeOperation],
+  stripLiteralValue: [Function: bound timeOperation],
+  removeTruthinessFromType: [Function: bound timeOperation],
+  removeFalsinessFromType: [Function: bound timeOperation],
+  stripTypeGuard: [Function: bound timeOperation],
+  solveAndApplyConstraints: [Function: bound timeOperation],
+  verifyRaiseExceptionType: [Function: bound timeOperation],
+  verifyDeleteExpression: [Function: bound timeOperation],
+  validateOverloadedArgTypes: [Function: bound timeOperation],
+  validateInitSubclassArgs: [Function: bound timeOperation],
+  isNodeReachable: [Function: bound timeOperation],
+  isAfterNodeReachable: [Function: bound timeOperation],
+  getNodeReachability: [Function: bound timeOperation],
+  getAfterNodeReachability: [Function: bound timeOperation],
+  isAsymmetricAccessorAssignment: [Function: bound timeOperation],
+  suppressDiagnostics: [Function: bound timeOperation],
+  isSpecialFormClass: [Function: bound timeOperation],
+  getDeclInfoForStringNode: [Function: bound timeOperation],
+  getDeclInfoForNameNode: [Function: bound timeOperation],
+  getTypeForDeclaration: [Function: bound timeOperation],
+  resolveAliasDeclaration: [Function: bound timeOperation],
+  resolveAliasDeclarationWithInfo: [Function: bound timeOperation],
+  getTypeOfIterable: [Function: bound timeOperation],
+  getTypeOfIterator: [Function: bound timeOperation],
+  getGetterTypeFromProperty: [Function: bound timeOperation],
+  getTypeOfArg: [Function: bound timeOperation],
+  convertNodeToArg: [Function: bound timeOperation],
+  buildTupleTypesList: [Function: bound timeOperation],
+  markNamesAccessed: [Function: bound timeOperation],
+  expandPromotionTypes: [Function: bound timeOperation],
+  makeTopLevelTypeVarsConcrete: [Function: bound timeOperation],
+  mapSubtypesExpandTypeVars: [Function: bound timeOperation],
+  isTypeSubsumedByOtherType: [Function: bound timeOperation],
+  lookUpSymbolRecursive: [Function: bound timeOperation],
+  getDeclaredTypeOfSymbol: [Function: bound timeOperation],
+  getEffectiveTypeOfSymbol: [Function: bound timeOperation],
+  getEffectiveTypeOfSymbolForUsage: [Function: bound timeOperation],
+  getInferredTypeOfDeclaration: [Function: bound timeOperation],
+  getDeclaredTypeForExpression: [Function: bound timeOperation],
+  getDeclaredReturnType: [Function: bound timeOperation],
+  getInferredReturnType: [Function: bound timeOperation],
+  getBestOverloadForArgs: [Function: bound timeOperation],
+  getBuiltInType: [Function: bound timeOperation],
+  getTypeOfMember: [Function: bound timeOperation],
+  getTypeOfBoundMember: [Function: bound timeOperation],
+  getBoundMagicMethod: [Function: bound timeOperation],
+  getTypeOfMagicMethodCall: [Function: bound timeOperation],
+  bindFunctionToClassOrObject: [Function: bound timeOperation],
+  getCallbackProtocolType: [Function: bound timeOperation],
+  getCallSignatureInfo: [Function: bound timeOperation],
+  getAbstractSymbols: [Function: bound timeOperation],
+  narrowConstrainedTypeVar: [Function: bound timeOperation],
+  isTypeComparable: [Function: bound timeOperation],
+  assignType: [Function: bound timeOperation],
+  validateOverrideMethod: [Function: bound timeOperation],
+  validateCallArgs: [Function: bound timeOperation],
+  validateTypeArg: [Function: bound timeOperation],
+  assignTypeToExpression: [Function: bound timeOperation],
+  assignClassToSelf: [Function: bound timeOperation],
+  getTypedDictClassType: [Function: bound timeOperation],
+  getTupleClassType: [Function: bound timeOperation],
+  getDictClassType: [Function: bound timeOperation],
+  getStrClassType: [Function: bound timeOperation],
+  getObjectType: [Function: bound timeOperation],
+  getNoneType: [Function: bound timeOperation],
+  getUnionClassType: [Function: bound timeOperation],
+  getTypeClassType: [Function: bound timeOperation],
+  getBuiltInObject: [Function: bound timeOperation],
+  getTypingType: [Function: bound timeOperation],
+  getTypeCheckerInternalsType: [Function: bound timeOperation],
+  assignTypeArgs: [Function: bound timeOperation],
+  reportMissingTypeArgs: [Function: bound timeOperation],
+  inferReturnTypeIfNecessary: [Function: bound timeOperation],
+  inferVarianceForClass: [Function: bound timeOperation],
+  isFinalVariable: [Function: bound timeOperation],
+  isFinalVariableDeclaration: [Function: bound timeOperation],
+  isExplicitTypeAliasDeclaration: [Function: bound timeOperation],
+  addInformation: [Function: bound timeOperation],
+  addUnreachableCode: [Function: bound timeOperation],
+  addDeprecated: [Function: bound timeOperation],
+  addDiagnostic: [Function: bound timeOperation],
+  addDiagnosticForTextRange: [Function: bound timeOperation],
+  printType: [Function: bound timeOperation],
+  printSrcDestTypes: [Function: bound timeOperation],
+  printFunctionParts: [Function: bound timeOperation],
+  getTypeCacheEntryCount: [Function: bound timeOperation],
+  disposeEvaluator: [Function: bound timeOperation],
+  useSpeculativeMode: [Function: bound timeOperation],
+  isSpeculativeModeInUse: [Function: bound timeOperation],
+  setTypeResultForNode: [Function: bound timeOperation],
+  checkForCancellation: [Function: bound timeOperation],
+  printControlFlowGraph: [Function: bound timeOperation]
+}
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+{
+  runWithCancellationToken: [Function: bound timeOperation],
+  getType: [Function: bound timeOperation],
+  getTypeResult: [Function: bound timeOperation],
+  getTypeResultForDecorator: [Function: bound timeOperation],
+  getCachedType: [Function: bound timeOperation],
+  getTypeOfExpression: [Function: bound timeOperation],
+  getTypeOfAnnotation: [Function: bound timeOperation],
+  getTypeOfClass: [Function: bound timeOperation],
+  createSubclass: [Function: bound timeOperation],
+  getTypeOfFunction: [Function: bound timeOperation],
+  getTypeOfExpressionExpectingType: [Function: bound timeOperation],
+  getExpectedType: [Function: bound timeOperation],
+  evaluateTypeForSubnode: [Function: bound timeOperation],
+  evaluateTypesForStatement: [Function: bound timeOperation],
+  evaluateTypesForMatchStatement: [Function: bound timeOperation],
+  evaluateTypesForCaseStatement: [Function: bound timeOperation],
+  evaluateTypeOfParam: [Function: bound timeOperation],
+  canBeTruthy: [Function: bound timeOperation],
+  canBeFalsy: [Function: bound timeOperation],
+  stripLiteralValue: [Function: bound timeOperation],
+  removeTruthinessFromType: [Function: bound timeOperation],
+  removeFalsinessFromType: [Function: bound timeOperation],
+  stripTypeGuard: [Function: bound timeOperation],
+  solveAndApplyConstraints: [Function: bound timeOperation],
+  verifyRaiseExceptionType: [Function: bound timeOperation],
+  verifyDeleteExpression: [Function: bound timeOperation],
+  validateOverloadedArgTypes: [Function: bound timeOperation],
+  validateInitSubclassArgs: [Function: bound timeOperation],
+  isNodeReachable: [Function: bound timeOperation],
+  isAfterNodeReachable: [Function: bound timeOperation],
+  getNodeReachability: [Function: bound timeOperation],
+  getAfterNodeReachability: [Function: bound timeOperation],
+  isAsymmetricAccessorAssignment: [Function: bound timeOperation],
+  suppressDiagnostics: [Function: bound timeOperation],
+  isSpecialFormClass: [Function: bound timeOperation],
+  getDeclInfoForStringNode: [Function: bound timeOperation],
+  getDeclInfoForNameNode: [Function: bound timeOperation],
+  getTypeForDeclaration: [Function: bound timeOperation],
+  resolveAliasDeclaration: [Function: bound timeOperation],
+  resolveAliasDeclarationWithInfo: [Function: bound timeOperation],
+  getTypeOfIterable: [Function: bound timeOperation],
+  getTypeOfIterator: [Function: bound timeOperation],
+  getGetterTypeFromProperty: [Function: bound timeOperation],
+  getTypeOfArg: [Function: bound timeOperation],
+  convertNodeToArg: [Function: bound timeOperation],
+  buildTupleTypesList: [Function: bound timeOperation],
+  markNamesAccessed: [Function: bound timeOperation],
+  expandPromotionTypes: [Function: bound timeOperation],
+  makeTopLevelTypeVarsConcrete: [Function: bound timeOperation],
+  mapSubtypesExpandTypeVars: [Function: bound timeOperation],
+  isTypeSubsumedByOtherType: [Function: bound timeOperation],
+  lookUpSymbolRecursive: [Function: bound timeOperation],
+  getDeclaredTypeOfSymbol: [Function: bound timeOperation],
+  getEffectiveTypeOfSymbol: [Function: bound timeOperation],
+  getEffectiveTypeOfSymbolForUsage: [Function: bound timeOperation],
+  getInferredTypeOfDeclaration: [Function: bound timeOperation],
+  getDeclaredTypeForExpression: [Function: bound timeOperation],
+  getDeclaredReturnType: [Function: bound timeOperation],
+  getInferredReturnType: [Function: bound timeOperation],
+  getBestOverloadForArgs: [Function: bound timeOperation],
+  getBuiltInType: [Function: bound timeOperation],
+  getTypeOfMember: [Function: bound timeOperation],
+  getTypeOfBoundMember: [Function: bound timeOperation],
+  getBoundMagicMethod: [Function: bound timeOperation],
+  getTypeOfMagicMethodCall: [Function: bound timeOperation],
+  bindFunctionToClassOrObject: [Function: bound timeOperation],
+  getCallbackProtocolType: [Function: bound timeOperation],
+  getCallSignatureInfo: [Function: bound timeOperation],
+  getAbstractSymbols: [Function: bound timeOperation],
+  narrowConstrainedTypeVar: [Function: bound timeOperation],
+  isTypeComparable: [Function: bound timeOperation],
+  assignType: [Function: bound timeOperation],
+  validateOverrideMethod: [Function: bound timeOperation],
+  validateCallArgs: [Function: bound timeOperation],
+  validateTypeArg: [Function: bound timeOperation],
+  assignTypeToExpression: [Function: bound timeOperation],
+  assignClassToSelf: [Function: bound timeOperation],
+  getTypedDictClassType: [Function: bound timeOperation],
+  getTupleClassType: [Function: bound timeOperation],
+  getDictClassType: [Function: bound timeOperation],
+  getStrClassType: [Function: bound timeOperation],
+  getObjectType: [Function: bound timeOperation],
+  getNoneType: [Function: bound timeOperation],
+  getUnionClassType: [Function: bound timeOperation],
+  getTypeClassType: [Function: bound timeOperation],
+  getBuiltInObject: [Function: bound timeOperation],
+  getTypingType: [Function: bound timeOperation],
+  getTypeCheckerInternalsType: [Function: bound timeOperation],
+  assignTypeArgs: [Function: bound timeOperation],
+  reportMissingTypeArgs: [Function: bound timeOperation],
+  inferReturnTypeIfNecessary: [Function: bound timeOperation],
+  inferVarianceForClass: [Function: bound timeOperation],
+  isFinalVariable: [Function: bound timeOperation],
+  isFinalVariableDeclaration: [Function: bound timeOperation],
+  isExplicitTypeAliasDeclaration: [Function: bound timeOperation],
+  addInformation: [Function: bound timeOperation],
+  addUnreachableCode: [Function: bound timeOperation],
+  addDeprecated: [Function: bound timeOperation],
+  addDiagnostic: [Function: bound timeOperation],
+  addDiagnosticForTextRange: [Function: bound timeOperation],
+  printType: [Function: bound timeOperation],
+  printSrcDestTypes: [Function: bound timeOperation],
+  printFunctionParts: [Function: bound timeOperation],
+  getTypeCacheEntryCount: [Function: bound timeOperation],
+  disposeEvaluator: [Function: bound timeOperation],
+  useSpeculativeMode: [Function: bound timeOperation],
+  isSpeculativeModeInUse: [Function: bound timeOperation],
+  setTypeResultForNode: [Function: bound timeOperation],
+  checkForCancellation: [Function: bound timeOperation],
+  printControlFlowGraph: [Function: bound timeOperation]
+}
+Execution environment: python
+  Extra paths:
+    /home/kuggix/pyright/packages/pyright/src
+  Python version: 3.12.9.final.0
+  Python platform: Linux
+  Search paths:
+    /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib
+    /home/kuggix/pyright/packages/pyright
+    /home/kuggix/pyright/packages/pyright/src
+    /home/kuggix/pyright/packages/pyright/typings
+    /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stubs/...
+    /home/kuggix/jaseci/jac/jaclang/vendor
+    /opt/ros/humble/lib/python3.10/site-packages
+    /opt/ros/humble/local/lib/python3.10/dist-packages
+    /home/kuggix/miniconda3/envs/jac/lib/python3.12
+    /home/kuggix/miniconda3/envs/jac/lib/python3.12/lib-dynload
+    /home/kuggix/miniconda3/envs/jac/lib/python3.12/site-packages
+    /home/kuggix/jaseci/jac
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+{
+  runWithCancellationToken: [Function: bound timeOperation],
+  getType: [Function: bound timeOperation],
+  getTypeResult: [Function: bound timeOperation],
+  getTypeResultForDecorator: [Function: bound timeOperation],
+  getCachedType: [Function: bound timeOperation],
+  getTypeOfExpression: [Function: bound timeOperation],
+  getTypeOfAnnotation: [Function: bound timeOperation],
+  getTypeOfClass: [Function: bound timeOperation],
+  createSubclass: [Function: bound timeOperation],
+  getTypeOfFunction: [Function: bound timeOperation],
+  getTypeOfExpressionExpectingType: [Function: bound timeOperation],
+  getExpectedType: [Function: bound timeOperation],
+  evaluateTypeForSubnode: [Function: bound timeOperation],
+  evaluateTypesForStatement: [Function: bound timeOperation],
+  evaluateTypesForMatchStatement: [Function: bound timeOperation],
+  evaluateTypesForCaseStatement: [Function: bound timeOperation],
+  evaluateTypeOfParam: [Function: bound timeOperation],
+  canBeTruthy: [Function: bound timeOperation],
+  canBeFalsy: [Function: bound timeOperation],
+  stripLiteralValue: [Function: bound timeOperation],
+  removeTruthinessFromType: [Function: bound timeOperation],
+  removeFalsinessFromType: [Function: bound timeOperation],
+  stripTypeGuard: [Function: bound timeOperation],
+  solveAndApplyConstraints: [Function: bound timeOperation],
+  verifyRaiseExceptionType: [Function: bound timeOperation],
+  verifyDeleteExpression: [Function: bound timeOperation],
+  validateOverloadedArgTypes: [Function: bound timeOperation],
+  validateInitSubclassArgs: [Function: bound timeOperation],
+  isNodeReachable: [Function: bound timeOperation],
+  isAfterNodeReachable: [Function: bound timeOperation],
+  getNodeReachability: [Function: bound timeOperation],
+  getAfterNodeReachability: [Function: bound timeOperation],
+  isAsymmetricAccessorAssignment: [Function: bound timeOperation],
+  suppressDiagnostics: [Function: bound timeOperation],
+  isSpecialFormClass: [Function: bound timeOperation],
+  getDeclInfoForStringNode: [Function: bound timeOperation],
+  getDeclInfoForNameNode: [Function: bound timeOperation],
+  getTypeForDeclaration: [Function: bound timeOperation],
+  resolveAliasDeclaration: [Function: bound timeOperation],
+  resolveAliasDeclarationWithInfo: [Function: bound timeOperation],
+  getTypeOfIterable: [Function: bound timeOperation],
+  getTypeOfIterator: [Function: bound timeOperation],
+  getGetterTypeFromProperty: [Function: bound timeOperation],
+  getTypeOfArg: [Function: bound timeOperation],
+  convertNodeToArg: [Function: bound timeOperation],
+  buildTupleTypesList: [Function: bound timeOperation],
+  markNamesAccessed: [Function: bound timeOperation],
+  expandPromotionTypes: [Function: bound timeOperation],
+  makeTopLevelTypeVarsConcrete: [Function: bound timeOperation],
+  mapSubtypesExpandTypeVars: [Function: bound timeOperation],
+  isTypeSubsumedByOtherType: [Function: bound timeOperation],
+  lookUpSymbolRecursive: [Function: bound timeOperation],
+  getDeclaredTypeOfSymbol: [Function: bound timeOperation],
+  getEffectiveTypeOfSymbol: [Function: bound timeOperation],
+  getEffectiveTypeOfSymbolForUsage: [Function: bound timeOperation],
+  getInferredTypeOfDeclaration: [Function: bound timeOperation],
+  getDeclaredTypeForExpression: [Function: bound timeOperation],
+  getDeclaredReturnType: [Function: bound timeOperation],
+  getInferredReturnType: [Function: bound timeOperation],
+  getBestOverloadForArgs: [Function: bound timeOperation],
+  getBuiltInType: [Function: bound timeOperation],
+  getTypeOfMember: [Function: bound timeOperation],
+  getTypeOfBoundMember: [Function: bound timeOperation],
+  getBoundMagicMethod: [Function: bound timeOperation],
+  getTypeOfMagicMethodCall: [Function: bound timeOperation],
+  bindFunctionToClassOrObject: [Function: bound timeOperation],
+  getCallbackProtocolType: [Function: bound timeOperation],
+  getCallSignatureInfo: [Function: bound timeOperation],
+  getAbstractSymbols: [Function: bound timeOperation],
+  narrowConstrainedTypeVar: [Function: bound timeOperation],
+  isTypeComparable: [Function: bound timeOperation],
+  assignType: [Function: bound timeOperation],
+  validateOverrideMethod: [Function: bound timeOperation],
+  validateCallArgs: [Function: bound timeOperation],
+  validateTypeArg: [Function: bound timeOperation],
+  assignTypeToExpression: [Function: bound timeOperation],
+  assignClassToSelf: [Function: bound timeOperation],
+  getTypedDictClassType: [Function: bound timeOperation],
+  getTupleClassType: [Function: bound timeOperation],
+  getDictClassType: [Function: bound timeOperation],
+  getStrClassType: [Function: bound timeOperation],
+  getObjectType: [Function: bound timeOperation],
+  getNoneType: [Function: bound timeOperation],
+  getUnionClassType: [Function: bound timeOperation],
+  getTypeClassType: [Function: bound timeOperation],
+  getBuiltInObject: [Function: bound timeOperation],
+  getTypingType: [Function: bound timeOperation],
+  getTypeCheckerInternalsType: [Function: bound timeOperation],
+  assignTypeArgs: [Function: bound timeOperation],
+  reportMissingTypeArgs: [Function: bound timeOperation],
+  inferReturnTypeIfNecessary: [Function: bound timeOperation],
+  inferVarianceForClass: [Function: bound timeOperation],
+  isFinalVariable: [Function: bound timeOperation],
+  isFinalVariableDeclaration: [Function: bound timeOperation],
+  isExplicitTypeAliasDeclaration: [Function: bound timeOperation],
+  addInformation: [Function: bound timeOperation],
+  addUnreachableCode: [Function: bound timeOperation],
+  addDeprecated: [Function: bound timeOperation],
+  addDiagnostic: [Function: bound timeOperation],
+  addDiagnosticForTextRange: [Function: bound timeOperation],
+  printType: [Function: bound timeOperation],
+  printSrcDestTypes: [Function: bound timeOperation],
+  printFunctionParts: [Function: bound timeOperation],
+  getTypeCacheEntryCount: [Function: bound timeOperation],
+  disposeEvaluator: [Function: bound timeOperation],
+  useSpeculativeMode: [Function: bound timeOperation],
+  isSpeculativeModeInUse: [Function: bound timeOperation],
+  setTypeResultForNode: [Function: bound timeOperation],
+  checkForCancellation: [Function: bound timeOperation],
+  printControlFlowGraph: [Function: bound timeOperation]
+}
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/main.py
+Found 1 source file
+Checking types for file file:///home/kuggix/pyright/packages/pyright/main.py
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/main.py
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/main.py
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/main.py ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/main.py ===
+[ImportResolver] Attempting to resolve import: '__builtins__' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '__builtins__' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '__builtins__' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: Failed to resolve '__builtins__'
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/main.py
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/main.py
+[ImportResolver] Attempting to resolve import: 'a' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'a' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'a' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/a.py
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/main.py
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: '_ast' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_ast' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_ast' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: '_sitebuiltins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_sitebuiltins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_sitebuiltins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: '_collections_abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'io' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'io' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'io' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'os' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'os' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'os' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_sitebuiltins.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/sys/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/io.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/os/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi ***
+Binding module: builtins
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/main.py ***
+Binding module: main
+Binding global names: _var
+undefined
+Recursing to parent scope: 5 for symbol: _var
+Value with scope: undefined
+2 -->  undefined
+Checking dependent files for file:///home/kuggix/pyright/packages/pyright/main.py
+🔍 [PRE_CHECK] File has 13 symbols before type checking
+  • __name__
+  • __loader__
+  • __package__
+  • __spec__
+  • __path__
+  • __file__
+  • __cached__
+  • __dict__
+  • __annotations__
+  • __builtins__
+  • __doc__
+  • A
+  • _var
+[SourceFile.check] +++ Starting type check for file: /home/kuggix/pyright/packages/pyright/main.py +++
+[SourceFile.check] SourceMapper: 0 dependent files
+Class type decorated type: type[type]
+Class object decorated type: type[object]
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import types from file:///home/kuggix/pyright/packages/pyright/main.py
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,importlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed.importlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed.importlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: 'importlib,machinery' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'importlib.machinery' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'importlib.machinery' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/importlib.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/importlib/machinery.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi ***
+Binding module: types
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'collections' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: '_collections_abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 're' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 're' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 're' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'annotationlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'contextlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'contextlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'contextlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'contextlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'contextlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'contextlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[ImportResolver] Attempting to resolve import: 'annotationlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/re.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/annotationlib.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/contextlib.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi ***
+Binding module: typing
+Class TypeVar decorated type: type[TypeVar]
+Class FunctionType decorated type: type[FunctionType]
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import types from file:///home/kuggix/pyright/packages/pyright/main.py
+Class MethodType decorated type: type[MethodType]
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import types from file:///home/kuggix/pyright/packages/pyright/main.py
+Class UnionType decorated type: type[UnionType]
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+Recursing to parent scope: 5 for symbol: type
+Recursing to parent scope: 5 for symbol: object
+Class Iterable decorated type: type[Iterable[_T_co@Iterable]]
+Class Container decorated type: type[Container[_T_co@Container]]
+Class Collection decorated type: type[Collection[_T_co@Collection]]
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import _typeshed from file:///home/kuggix/pyright/packages/pyright/main.py
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'dataclasses' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'dataclasses' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'dataclasses' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'os' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'os' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'os' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'enum' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'enum' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'enum' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'enum' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'enum' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'enum' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[ImportResolver] Attempting to resolve import: 'annotationlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/dataclasses.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/enum.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi ***
+Binding module: _typeshed
+Class NoneType decorated type: type[None]
+Class Reversible decorated type: type[Reversible[_T_co@Reversible]]
+Class Sequence decorated type: type[Sequence[_T_co@Sequence]]
+Class int decorated type: type[int]
+Class bool decorated type: type[bool]
+Class tuple decorated type: type[tuple[_T_co@tuple]]
+Class str decorated type: type[str]
+Class Mapping decorated type: type[Mapping[_KT@Mapping, _VT_co@Mapping]]
+Class MutableMapping decorated type: type[MutableMapping[_KT@MutableMapping, _VT@MutableMapping]]
+Class dict decorated type: type[dict[_KT@dict, _VT@dict]]
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+Class ModuleType decorated type: type[ModuleType]
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+Recursing to parent scope: 5 for symbol: str
+Recursing to parent scope: 5 for symbol: object
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi ***
+Binding module: abc
+Recursing to parent scope: 5 for symbol: type
+Class ABCMeta decorated type: type[ABCMeta]
+Class Any decorated type: type[Any]
+Recursing to parent scope: 5 for symbol: type
+Class _TypedDict decorated type: type[_TypedDict]
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import _typeshed._type_checker_internals from file:///home/kuggix/pyright/packages/pyright/main.py
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: '_collections_abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: 'abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing_extensions' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi ***
+Binding module: _typeshed._type_checker_internals
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[ImportResolver] Attempting to resolve import: '_collections_abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[ImportResolver] Attempting to resolve import: '_collections_abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi ***
+Binding module: collections.abc
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[ImportResolver] Attempting to resolve import: 'abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi ***
+Binding module: _collections_abc
+Recursing to parent scope: 5 for symbol: str
+Recursing to parent scope: 5 for symbol: object
+Class TypedDictFallback decorated type: type[TypedDictFallback]
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+Class Awaitable decorated type: type[Awaitable[_T_co@Awaitable]]
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+[ImportResolver] Attempting to resolve import: 'string,templatelib' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'string.templatelib' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'string.templatelib' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: Failed to resolve 'string.templatelib'
+[Copilot Debug] Program._lookUpImport: Looking up import string.templatelib from file:///home/kuggix/pyright/packages/pyright/main.py
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import _typeshed from file:///home/kuggix/pyright/packages/pyright/main.py
+Class SupportsKeysAndGetItem decorated type: type[SupportsKeysAndGetItem[_KT@SupportsKeysAndGetItem, _VT_co@SupportsKeysAndGetItem]]
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/a.py
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/a.py
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/a.py ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/a.py ===
+[ImportResolver] Attempting to resolve import: '__builtins__' from file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '__builtins__' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '__builtins__' from /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'b' from file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'b' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'b' from /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'math' from file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'math' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'math' from /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'math' from file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'math' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'math' from /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'random' from file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'random' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'random' from /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/a.py
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/a.py ***
+Binding module: a
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/b.py
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/b.py
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/b.py ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/b.py ===
+[ImportResolver] Attempting to resolve import: '__builtins__' from file: /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '__builtins__' from /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '__builtins__' from /home/kuggix/pyright/packages/pyright/b.py
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/b.py
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/b.py
+[ImportResolver] Attempting to resolve import: 'requests' from file: /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'requests' from /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'requests' from /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stubs/requests/requests/__init__.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/b.py
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/b.py ***
+Binding module: b
+Class A decorated type: type[A]
+Recursing to parent scope: 5 for symbol: print
+Class SupportsWrite decorated type: type[SupportsWrite[_T_contra@SupportsWrite]]
+Class SupportsFlush decorated type: type[SupportsFlush]
+Class _SupportsWriteAndFlush decorated type: type[_SupportsWriteAndFlush[_T_contra@_SupportsWriteAndFlush]]
+Recursing to parent scope: 4 for symbol: _T_contra
+Recursing to parent scope: 4 for symbol: object
+Recursing to parent scope: 5 for symbol: object
+bind file 
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'builtins' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed._type_checker_internals' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'enum' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'enum' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'enum' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'sys' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: '_collections_abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_collections_abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START '_typeshed' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'contextlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'contextlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'contextlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 're' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 're' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 're' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'collections.abc' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'io' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'io' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'io' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'types' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'types' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'warnings' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'warnings' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'warnings' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'typing' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[ImportResolver] Attempting to resolve import: 'annotationlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImport: Resolving 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] ImportResolver.resolveImportInternal: START 'annotationlib' from /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/warnings.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+_bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+_bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file 
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi ***
+Binding module: typing_extensions
+Heap stats: total_memory_size=7784MB, total_free_size=3810MB, total_heap_size=75MB, used_heap_size=52MB, cross_worker_used_heap_size=52MB, total_physical_size=75MB, total_available_size=2043MB, heap_size_limit=2096MB
+pyright 1.1.402
+/home/kuggix/pyright/packages/pyright/main.py
+  /home/kuggix/pyright/packages/pyright/main.py:3:15 - error: Import "A" is not accessed (reportUnusedImport)
+  /home/kuggix/pyright/packages/pyright/main.py:8:12 - error: Statements must be separated by newlines or semicolons
+  /home/kuggix/pyright/packages/pyright/main.py:8:12 - error: Expected expression
+3 errors, 0 warnings, 0 informations 
+Completed in 1.368sec

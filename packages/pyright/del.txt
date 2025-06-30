@@ -14,6 +14,7 @@ Execution environment: python
     /home/kuggix/pyright/packages/pyright/src
     /home/kuggix/pyright/packages/pyright/typings
     /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stubs/...
+    /home/kuggix/jaseci/jac/jaclang/vendor
     /opt/ros/humble/lib/python3.10/site-packages
     /opt/ros/humble/local/lib/python3.10/dist-packages
     /home/kuggix/miniconda3/envs/jac/lib/python3.12
@@ -182,6 +183,9 @@ Found 1 source file
 [ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/a.py
 [ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/a.py
 [ImportResolver] Attempting to resolve import: 'b' from file: /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'math' from file: /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'math' from file: /home/kuggix/pyright/packages/pyright/a.py
+[ImportResolver] Attempting to resolve import: 'random' from file: /home/kuggix/pyright/packages/pyright/a.py
 [SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/a.py ***
 [Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/b.py
 [SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/b.py ---
@@ -189,6 +193,7 @@ Found 1 source file
 [ImportResolver] Attempting to resolve import: '__builtins__' from file: /home/kuggix/pyright/packages/pyright/b.py
 [ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/b.py
 [ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/b.py
+[ImportResolver] Attempting to resolve import: 'requests' from file: /home/kuggix/pyright/packages/pyright/b.py
 [SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/b.py ***
 [Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
 [SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi ---
@@ -220,9 +225,25 @@ Found 1 source file
 [ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
 [ImportResolver] Attempting to resolve import: 'annotationlib' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
 [SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi ***
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[ImportResolver] Attempting to resolve import: '_random' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[ImportResolver] Attempting to resolve import: 'sys' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[ImportResolver] Attempting to resolve import: 'collections,abc' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[ImportResolver] Attempting to resolve import: 'fractions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[ImportResolver] Attempting to resolve import: 'typing' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi ***
+[Copilot Debug] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_random.pyi
+[SourceFile.parse] --- Preparing to parse content for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_random.pyi ---
+[Program._parseFile] === Attempting to process file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_random.pyi ===
+[ImportResolver] Attempting to resolve import: 'builtins' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_random.pyi
+[ImportResolver] Attempting to resolve import: '_typeshed,_type_checker_internals' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_random.pyi
+[ImportResolver] Attempting to resolve import: 'typing_extensions' from file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_random.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_random.pyi ***
 pyright 1.1.402
-/home/kuggix/pyright/packages/pyright/main.py
-  /home/kuggix/pyright/packages/pyright/main.py:2:15 - error: Import "A" is not accessed (reportUnusedImport)
-  /home/kuggix/pyright/packages/pyright/main.py:2:18 - error: Import "B" is not accessed (reportUnusedImport)
-2 errors, 0 warnings, 0 informations 
-Completed in 0.599sec
+0 errors, 0 warnings, 0 informations 
+Completed in 0.936sec

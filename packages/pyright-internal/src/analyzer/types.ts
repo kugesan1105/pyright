@@ -1301,6 +1301,9 @@ export namespace ClassType {
     export function getSymbolTable(classType: ClassType) {
         classType.shared.synthesizeMethodsDeferred?.();
 
+        if (process.env.DEBUG_SYMBOLS === 'true') {
+            console.log(`getSymbolTable called for ${classType.shared.fullName}`);
+        }
         return classType.shared.fields;
     }
 

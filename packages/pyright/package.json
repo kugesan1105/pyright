@@ -20,7 +20,8 @@
         "build": "webpack --mode production --progress",
         "clean": "shx rm -rf ./dist ./out README.md LICENSE.txt",
         "prepack": "npm run clean && shx cp ../../README.md . && shx cp ../../LICENSE.txt . && npm run build",
-        "webpack": "webpack --mode development --progress"
+        "webpack": "webpack --mode development --progress",
+        "watch": "webpack --watch --mode development"
     },
     "optionalDependencies": {
         "fsevents": "~2.3.3"

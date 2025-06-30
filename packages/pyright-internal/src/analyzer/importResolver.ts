@@ -155,15 +155,23 @@ export class ImportResolver {
         execEnv: ExecutionEnvironment,
         moduleDescriptor: ImportedModuleDescriptor
     ): ImportResult {
-        this.serviceProvider
-            .console()
-            .info(
-                `[ImportResolver] Attempting to resolve import: '${
-                    moduleDescriptor.nameParts
-                }' from file: ${sourceFileUri.toUserVisibleString()}`
-            );
+        // this.serviceProvider
+        //     .console()
+        //     .info(
+        //         `[ImportResolver] Attempting to resolve import: '${
+        //             moduleDescriptor.nameParts
+        //         }' from file: ${sourceFileUri.toUserVisibleString()}`
+        //     );
         // Wrap internal call to resolveImportInternal() to prevent calling any
         // child class version of resolveImport().
+        // this.serviceProvider
+        //     .console()
+        //     .info(
+        //         `[Copilot Debug] ImportResolver.resolveImport: Resolving '${moduleDescriptor.nameParts.join(
+        //             '.'
+        //         )}' from ${sourceFileUri.toUserVisibleString()}`
+        //     );
+
         return this.resolveImportInternal(sourceFileUri, execEnv, moduleDescriptor);
     }
 
@@ -548,6 +556,12 @@ export class ImportResolver {
         moduleDescriptor: ImportedModuleDescriptor
     ): ImportResult {
         const importName = formatImportName(moduleDescriptor);
+        this.serviceProvider;
+        // .console()
+        // .info(
+        //     `[Copilot Debug] ImportResolver.resolveImportInternal: START '${importName}' from ${sourceFileUri.toUserVisibleString()}`
+        // );
+
         const importFailureInfo: string[] = [];
         const importResult = this._resolveImportStrict(
             importName,
@@ -623,19 +637,19 @@ export class ImportResolver {
             const console = this.serviceProvider.console();
             localImportFailureInfo.forEach((diag) => console.log(diag));
         }
-        if (importResult.isImportFound) {
-            this.serviceProvider
-                .console()
-                .info(
-                    `[Copilot Debug] ImportResolver.resolveImportInternal: Resolved '${importName}' to ${importResult.resolvedUris
-                        .map((u) => u.toString())
-                        .join(', ')} (isStubFile: ${importResult.isStubFile}, importType: ${importResult.importType})`
-                );
-        } else {
-            this.serviceProvider
-                .console()
-                .info(`[Copilot Debug] ImportResolver.resolveImportInternal: Failed to resolve '${importName}'`);
-        }
+        // if (importResult.isImportFound) {
+        //     this.serviceProvider
+        //         .console()
+        //         .info(
+        //             `[Copilot Debug] ImportResolver.resolveImportInternal: Resolved '${importName}' to ${importResult.resolvedUris
+        //                 .map((u) => u.toString())
+        //                 .join(', ')} (isStubFile: ${importResult.isStubFile}, importType: ${importResult.importType})`
+        //         );
+        // } else {
+        //     this.serviceProvider
+        //         .console()
+        //         .info(`[Copilot Debug] ImportResolver.resolveImportInternal: Failed to resolve '${importName}'`);
+        // }
         return importResult;
     }
 
@@ -972,6 +986,12 @@ export class ImportResolver {
             );
 
             if (cachedResults) {
+                // this.serviceProvider
+                //     .console()
+                //     .info(
+                //         `[Copilot Debug] ImportResolver.resolveImportInternal: Found in cache for '${importName}' from ${sourceFileUri.toUserVisibleString()}`
+                //     );
+
                 return cachedResults;
             }
 

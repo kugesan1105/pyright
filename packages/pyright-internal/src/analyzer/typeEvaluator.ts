@@ -14477,6 +14477,7 @@ export function createTypeEvaluator(
         flags: EvalFlags,
         inferenceContext: InferenceContext | undefined
     ): TypeResult {
+        console.log('get type of list or set', node.nodeType, flags, inferenceContext);
         if (
             (flags & EvalFlags.TypeExpression) !== 0 &&
             node.nodeType === ParseNodeType.List &&
@@ -18051,7 +18052,7 @@ export function createTypeEvaluator(
                     decoratedType = newDecoratedType;
                 }
             }
-
+            // console.log(`Class ${node.d.name.d.value} decorated type: ${printType(decoratedType)}`);
             // Determine whether this class derives from (or has a metaclass) that imbues
             // it with dataclass-like behaviors. If so, we'll apply those here.
             let dataClassBehaviors: DataClassBehaviors | undefined;

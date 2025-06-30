@@ -144,7 +144,9 @@ export class Scope {
     lookUpSymbolRecursive(name: string, options?: LookupSymbolOptions): SymbolWithScope | undefined {
         let effectiveScope: Scope = this;
         let symbol = this.symbolTable.get(name);
-
+        if (process.env.DEBUG_SYMBOLS === 'true') {
+            console.log(`Looking up symbol: ${name} in scope: ${this.type}`);
+        }
         if (!symbol && options?.useProxyScope && this.proxy) {
             symbol = this.proxy.symbolTable.get(name);
             effectiveScope = this.proxy;
@@ -164,6 +166,9 @@ export class Scope {
                 decls.length === 0 ||
                 decls.some((decl) => decl.type !== DeclarationType.Variable || !decl.isDefinedByMemberAccess)
             ) {
+                if (process.env.DEBUG_SYMBOLS === 'true') {
+                    console.log(`Symbol ${name} not found in scope: ${this.type}`);
+                }
                 return {
                     symbol,
                     isOutsideCallerModule: !!options?.isOutsideCallerModule,
@@ -195,6 +200,7 @@ export class Scope {
             // If our recursion is about to take us outside the scope of the current
             // module (i.e. into a built-in scope), indicate as such with the second
             // parameter.
+            // console.log(`Recursing to parent scope: ${parentScope.type} for symbol: ${name}`);
             return parentScope.lookUpSymbolRecursive(name, {
                 isOutsideCallerModule: !!options?.isOutsideCallerModule || this.type === ScopeType.Module,
                 isBeyondExecutionScope: isNextScopeBeyondExecutionScope,

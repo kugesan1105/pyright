@@ -48,7 +48,7 @@ export function analyzeProgram(
     token: CancellationToken
 ): boolean {
     let moreToAnalyze = false;
-
+    console.log(`Analyzing program with maxTime=${maxTime?.toString() ?? 'undefined'}`);
     callback = callback ?? nullCallback;
 
     try {

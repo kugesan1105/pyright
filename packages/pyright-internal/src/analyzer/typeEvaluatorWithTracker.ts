@@ -55,10 +55,18 @@ export function createTypeEvaluatorWithTracker(
 
     // Wrap all functions with either a logger or a timer.
     importLookup = wrapWithLogger(importLookup);
+    // console.log('importLookup wrapped with logger', importLookup.name, logger.logLevel);
+    // console.log('creating type evaluator with tracker', evaluatorOptions.logCalls, logger.logLevel);
     const evaluator = createTypeEvaluator(importLookup, evaluatorOptions, wrapWithLogger);
 
     // Track these apis external usages when logging is on. otherwise, it should be noop.
     const keys = Object.keys(evaluator);
+    // console.log('keys in evaluator', keys);
+    // console.log('evaluator', evaluator);
+    // console.log('evaluatorOptions', evaluatorOptions);
+    // console.log('logger', logger);
+    // console.log('printer', printer);
+    // console.log('wrapWithLogger', wrapWithLogger);
     keys.forEach((k) => {
         const entry = (evaluator as any)[k];
         if (typeof entry === 'function' && entry.name) {

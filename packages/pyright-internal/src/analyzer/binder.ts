@@ -271,6 +271,14 @@ export class Binder extends ParseTreeWalker {
     }
 
     bindModule(node: ModuleNode): void {
+        // console the module name console log
+        if (this._fileInfo.moduleName) {
+            console.log(`Binding module: ${this._fileInfo.moduleName}`);
+        } else {
+            console.log('Binding unnamed module');
+        }
+        // console.log('enter ', node.id, node);
+        // console.log(node.d);
         // We'll assume that if there is no builtins scope provided, we must be
         // binding the builtins module itself.
         const isBuiltInModule = this._fileInfo.builtinsScope === undefined;
@@ -284,7 +292,6 @@ export class Binder extends ParseTreeWalker {
             () => {
                 AnalyzerNodeInfo.setScope(node, this._currentScope);
                 AnalyzerNodeInfo.setFlowNode(node, this._currentFlowNode!);
-
                 // Bind implicit names.
                 // List taken from https://docs.python.org/3/reference/import.html#__name__
                 this._addImplicitSymbolToCurrentScope('__name__', node, 'str');
@@ -298,6 +305,9 @@ export class Binder extends ParseTreeWalker {
                 this._addImplicitSymbolToCurrentScope('__annotations__', node, 'Dict[str, Any]');
                 this._addImplicitSymbolToCurrentScope('__builtins__', node, 'Any');
                 this._addImplicitSymbolToCurrentScope('__doc__', node, 'str | None');
+                0;
+                // console.log('Current scope:', this._currentScope);
+                // console.log('_typingSymbolAliases:', this._typingSymbolAliases);
 
                 // Create a start node for the module.
                 this._currentFlowNode = this._createStartFlowNode();
@@ -311,7 +321,7 @@ export class Binder extends ParseTreeWalker {
                 AnalyzerNodeInfo.setCodeFlowComplexity(node, this._codeFlowComplexity);
             }
         );
-
+        // console.log('out of createNewScope', node.id);
         // Perform all analysis that was deferred during the first pass.
         this._bindDeferred();
 
@@ -429,6 +439,7 @@ export class Binder extends ParseTreeWalker {
     }
 
     override visitClass(node: ClassNode): boolean {
+        // console.log('visiting class:', node.d.name.d.value);
         this.walkMultiple(node.d.decorators);
 
         const classDeclaration: ClassDeclaration = {
@@ -442,6 +453,7 @@ export class Binder extends ParseTreeWalker {
 
         const symbol = this._bindNameToScope(this._currentScope, node.d.name);
         if (symbol) {
+            // console.log('sym', symbol);
             symbol.addDeclaration(classDeclaration);
         }
 
@@ -469,6 +481,7 @@ export class Binder extends ParseTreeWalker {
 
                 this._dunderSlotsEntries = undefined;
                 if (!this._moduleSymbolOnly) {
+                    // console.log('Creating flow node for class:', node.d.name.d.value);
                     // Analyze the suite.
                     this.walk(node.d.suite);
                 }
@@ -486,6 +499,7 @@ export class Binder extends ParseTreeWalker {
     }
 
     override visitFunction(node: FunctionNode): boolean {
+        // console.log('visiting function:', node.d.name.d.value);
         this._createVariableAnnotationFlowNode();
         AnalyzerNodeInfo.setFlowNode(node, this._currentFlowNode!);
 
@@ -1662,9 +1676,11 @@ export class Binder extends ParseTreeWalker {
 
     override visitGlobal(node: GlobalNode): boolean {
         const globalScope = this._currentScope.getGlobalScope().scope;
+        console.log(`\t\t ---- Binding global names: ${node.d.targets.map((n) => n.d.value).join(', ')}`);
 
         node.d.targets.forEach((name) => {
             const nameValue = name.d.value;
+            // console.log(this._currentScope.getBindingType(nameValue));
 
             // Is the binding inconsistent?
             if (this._currentScope.getBindingType(nameValue) === NameBindingType.Nonlocal) {
@@ -1672,7 +1688,7 @@ export class Binder extends ParseTreeWalker {
             }
 
             const valueWithScope = this._currentScope.lookUpSymbolRecursive(nameValue);
-
+            console.log(`Value with scope: ${valueWithScope ? valueWithScope.scope.type : 'undefined'}`);
             // Was the name already assigned within this scope before it was declared global?
             if (valueWithScope && valueWithScope.scope === this._currentScope) {
                 this._addSyntaxError(LocMessage.globalReassignment().format({ name: nameValue }), name);
@@ -1684,6 +1700,7 @@ export class Binder extends ParseTreeWalker {
             if (this._currentScope !== globalScope) {
                 this._currentScope.setBindingType(nameValue, NameBindingType.Global);
             }
+            // console.log('2 --> ', this._currentScope.getBindingType(nameValue));
         });
 
         return true;
@@ -4395,6 +4412,7 @@ export class DummyScopeGenerator extends ParseTreeWalker {
     }
 
     override visitClass(node: ClassNode): boolean {
+        // console.log('Creating dummy scope for class:', node.d.name.d.value);
         const newScope = this._createNewScope(ScopeType.Class, () => {
             this.walk(node.d.suite);
         });

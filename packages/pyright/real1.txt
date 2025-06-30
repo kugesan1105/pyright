@@ -1,0 +1,326 @@
+Using root directory: /home/kuggix/pyright/packages/pyright/dist/
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+Loading configuration file at /home/kuggix/pyright/packages/pyright/pyrightconfig.json
+Auto-excluding **/node_modules
+Auto-excluding **/__pycache__
+Auto-excluding **/.*
+Assuming Python version 3.12.9.final.0
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+Execution environment: python
+  Extra paths:
+    /home/kuggix/pyright/packages/pyright/src
+  Python version: 3.12.9.final.0
+  Python platform: Linux
+  Search paths:
+    /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib
+    /home/kuggix/pyright/packages/pyright
+    /home/kuggix/pyright/packages/pyright/src
+    /home/kuggix/pyright/packages/pyright/typings
+    /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stubs/...
+    /home/kuggix/jaseci/jac/jaclang/vendor
+    /opt/ros/humble/lib/python3.10/site-packages
+    /opt/ros/humble/local/lib/python3.10/dist-packages
+    /home/kuggix/miniconda3/envs/jac/lib/python3.12
+    /home/kuggix/miniconda3/envs/jac/lib/python3.12/lib-dynload
+    /home/kuggix/miniconda3/envs/jac/lib/python3.12/site-packages
+    /home/kuggix/jaseci/jac
+[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/main.py
+Found 1 source file
+HIiiii 11111 analyze 1 files
+No open files to analyze
+analyze inner  file:///home/kuggix/pyright/packages/pyright/main.py
+Checking types for file file:///home/kuggix/pyright/packages/pyright/main.py
+bind file  file:///home/kuggix/pyright/packages/pyright/main.py
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/main.py
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/a.py
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/main.py
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_sitebuiltins.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/sys/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/io.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/os/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi ***
+Binding module: builtins
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/main.py ***
+Binding module: main
+		 ---- Binding global names: _varAJAC
+Value with scope: undefined
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/main.py
+🔍 23[CHECK] Checking file file:///home/kuggix/pyright/packages/pyright/main.py
+[SourceFile.check] +++ Starting type check for file: /home/kuggix/pyright/packages/pyright/main.py +++
+[SourceFile.check] SourceMapper: 0 dependent files
+[Copilot Debug] Program._lookUpImport: Looking up import types from file:///home/kuggix/pyright/packages/pyright/main.py
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/importlib.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/importlib/machinery.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi ***
+Binding module: types
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/re.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/annotationlib.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/contextlib.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi ***
+Binding module: typing
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+[Copilot Debug] Program._lookUpImport: Looking up import types from file:///home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import types from file:///home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import _typeshed from file:///home/kuggix/pyright/packages/pyright/main.py
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/dataclasses.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/enum.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi ***
+Binding module: _typeshed
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi ***
+Binding module: abc
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+[Copilot Debug] Program._lookUpImport: Looking up import _typeshed._type_checker_internals from file:///home/kuggix/pyright/packages/pyright/main.py
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi ***
+Binding module: _typeshed._type_checker_internals
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi ***
+Binding module: collections.abc
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi ***
+Binding module: _collections_abc
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import typing from file:///home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import string.templatelib from file:///home/kuggix/pyright/packages/pyright/main.py
+[Copilot Debug] Program._lookUpImport: Looking up import _typeshed from file:///home/kuggix/pyright/packages/pyright/main.py
+not u 1887 file:///home/kuggix/pyright/packages/pyright/a.py
+bind file  file:///home/kuggix/pyright/packages/pyright/a.py
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/a.py
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/a.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/a.py
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/a.py ***
+Binding module: a
+not u 1887 file:///home/kuggix/pyright/packages/pyright/b.py
+bind file  file:///home/kuggix/pyright/packages/pyright/b.py
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/b.py
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/b.py
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stubs/requests/requests/__init__.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/b.py
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/b.py ***
+Binding module: b
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/b.py
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/a.py
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/warnings.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi ***
+Binding module: typing_extensions
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+not u 1887 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+[program._parse] Program._parseFile: Parsing file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+[SourceFile.parse] Parsing file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+guess is correct , going to call _bindImplicitImports
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+inside _bindImplicitImports file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+inside _bindImplicitImports?? file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+
+
+ going to call bind method _bindImplicitImports9090 file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+bind file  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+[SourceFile.bind] *** Starting binding for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi ***
+Binding module: math
+[SourceFile.bind] Binder finished for file: /home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/builtins.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/_type_checker_internals.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/a.py
+CONTINUE file:///home/kuggix/pyright/packages/pyright/a.py
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_sitebuiltins.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_sitebuiltins.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/__init__.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/sys/__init__.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/sys/__init__.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/types.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_collections_abc.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/abc.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/io.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/io.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/os/__init__.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/os/__init__.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/typing_extensions.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/importlib.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/_typeshed/importlib.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/importlib/machinery.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/importlib/machinery.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/__init__.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/collections/__init__.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/abc.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/re.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/re.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/annotationlib.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/annotationlib.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/contextlib.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/contextlib.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/dataclasses.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/dataclasses.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/enum.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/enum.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/b.py
+CONTINUE file:///home/kuggix/pyright/packages/pyright/b.py
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/math.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/random.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stubs/requests/requests/__init__.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stubs/requests/requests/__init__.pyi
+analyze inner  file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/warnings.pyi
+CONTINUE file:///home/kuggix/pyright/packages/pyright/dist/typeshed-fallback/stdlib/warnings.pyi
+analyze done
+pyright 1.1.402
+/home/kuggix/pyright/packages/pyright/main.py
+  /home/kuggix/pyright/packages/pyright/main.py:8:16 - error: Statements must be separated by newlines or semicolons
+  /home/kuggix/pyright/packages/pyright/main.py:8:16 - error: Expected expression
+2 errors, 0 warnings, 0 informations 
+Completed in 0.919sec

@@ -318,6 +318,7 @@ export class Checker extends ParseTreeWalker {
     }
 
     override visitClass(node: ClassNode): boolean {
+        // console.log('visiting class:', node.d.name.d.value);
         const classTypeResult = this._evaluator.getTypeOfClass(node);
 
         if (node.d.typeParams) {
@@ -403,6 +404,7 @@ export class Checker extends ParseTreeWalker {
     }
 
     override visitFunction(node: FunctionNode): boolean {
+        console.log('visiting function:', node.d.name.d.value);
         if (node.d.typeParams) {
             this.walk(node.d.typeParams);
         }
@@ -861,6 +863,7 @@ export class Checker extends ParseTreeWalker {
     }
 
     override visitFor(node: ForNode): boolean {
+        console.log('visiting for:');
         this._evaluator.evaluateTypesForStatement(node);
 
         if (node.d.typeComment) {
@@ -875,6 +878,7 @@ export class Checker extends ParseTreeWalker {
     }
 
     override visitList(node: ListNode): boolean {
+        console.log('visiting list:');
         this._validateIllegalDefaultParamInitializer(node);
         return true;
     }

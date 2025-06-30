@@ -310,6 +310,7 @@ export class PackageTypeVerifier {
         symbolTable: SymbolTable,
         scopeType: ScopeType
     ) {
+        console.log(`Processing public symbols for module "${module.name}" in scope "${scopeName}"`);
         symbolTable.forEach((symbol, name) => {
             if (
                 !isPrivateOrProtectedName(name) &&

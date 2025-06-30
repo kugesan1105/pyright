@@ -285,7 +285,7 @@ export class Program {
                 }
             });
         }
-
+        console.log('setTrackedFiles 288');
         // Add the new files. Only the new items will be added.
         this.addTrackedFiles(fileUris);
 
@@ -308,6 +308,7 @@ export class Program {
     }
 
     addTrackedFiles(fileUris: Uri[], isThirdPartyImport = false, isInPyTypedPackage = false) {
+        console.log('addTrackedFiles 311');
         fileUris.forEach((fileUri) => {
             this.addTrackedFile(fileUri, isThirdPartyImport, isInPyTypedPackage);
         });
@@ -315,6 +316,7 @@ export class Program {
 
     addInterimFile(fileUri: Uri): SourceFileInfo {
         // Double check not already there.
+        console.log('addInterimFile 318');
         let fileInfo = this.getSourceFileInfo(fileUri);
         if (!fileInfo) {
             fileInfo = this._createInterimFileInfo(fileUri);
@@ -325,6 +327,8 @@ export class Program {
 
     addTrackedFile(fileUri: Uri, isThirdPartyImport = false, isInPyTypedPackage = false): SourceFile {
         let sourceFileInfo = this.getSourceFileInfo(fileUri);
+        console.log('addTrackedFile 329');
+
         const moduleImportInfo = this._getModuleImportInfoForFile(fileUri);
         const importName = moduleImportInfo.moduleName;
 
@@ -363,6 +367,8 @@ export class Program {
     setFileOpened(fileUri: Uri, version: number | null, contents: string, options?: OpenFileOptions) {
         let sourceFileInfo = this.getSourceFileInfo(fileUri);
         if (!sourceFileInfo) {
+            console.log('18883may be this one ????');
+
             const moduleImportInfo = this._getModuleImportInfoForFile(fileUri);
             const sourceFile = this._sourceFileFactory.createSourceFile(
                 this.serviceProvider,
@@ -619,7 +625,7 @@ export class Program {
         if (!sourceFileInfo) {
             return undefined;
         }
-
+        console.log('not u getBoundSourceFileInfo', uri.toString());
         this._bindFile(sourceFileInfo, content, force);
         return sourceFileInfo;
     }
@@ -630,17 +636,23 @@ export class Program {
     // whether the method needs to be called again to complete the
     // analysis. In interactive mode, the timeout is always limited
     // to the smaller value to maintain responsiveness.
+    // JAC_STEP_01
     analyze(maxTime?: MaxAnalysisTime, token: CancellationToken = CancellationToken.None): boolean {
+        console.log('HIiiii 11111 analyze', this._sourceFileList.length, 'files');
         return this._runEvaluatorWithCancellationToken(token, () => {
             const elapsedTime = new Duration();
 
             const openFiles = this._sourceFileList.filter(
                 (sf) => sf.isOpenByClient && sf.sourceFile.isCheckingRequired()
             );
-
+            if (openFiles.length > 0) {
+                console.log('Open files to analyze:', openFiles.length);
+            } else {
+                console.log('No open files to analyze');
+            }
             if (openFiles.length > 0) {
                 const effectiveMaxTime = maxTime ? maxTime.openFilesTimeInMs : Number.MAX_VALUE;
-
+                console.log('open files', openFiles.length, 'effectiveMaxTime', effectiveMaxTime);
                 // Check the open files.
                 for (const sourceFileInfo of openFiles) {
                     if (this._checkTypes(sourceFileInfo, token)) {
@@ -660,10 +672,11 @@ export class Program {
 
             if (!this._configOptions.checkOnlyOpenFiles) {
                 const effectiveMaxTime = maxTime ? maxTime.noOpenFilesTimeInMs : Number.MAX_VALUE;
-
                 // Now do type parsing and analysis of the remaining.
                 for (const sourceFileInfo of this._sourceFileList) {
+                    console.log('analyze inner ', sourceFileInfo.uri.toString());
                     if (!isUserCode(sourceFileInfo)) {
+                        console.log('CONTINUE', sourceFileInfo.uri.toString());
                         continue;
                     }
 
@@ -674,7 +687,7 @@ export class Program {
                     }
                 }
             }
-
+            console.log('analyze done');
             return false;
         });
     }
@@ -682,6 +695,7 @@ export class Program {
     // Performs parsing and analysis of a single file in the program. If the file is not part of
     // the program returns false to indicate analysis was not performed.
     analyzeFile(fileUri: Uri, token: CancellationToken = CancellationToken.None): boolean {
+        console.log('22222 analyzeFile', fileUri.toString());
         return this._runEvaluatorWithCancellationToken(token, () => {
             const sourceFileInfo = this.getSourceFileInfo(fileUri);
             if (sourceFileInfo && this._checkTypes(sourceFileInfo, token)) {
@@ -851,7 +865,7 @@ export class Program {
                     const errMsg = `Could not create directory for '${typeStubDir}'`;
                     throw new Error(errMsg);
                 }
-
+                console.log(`not u Writing type stub for ${fileUri} to ${typeStubPath}`);
                 this._bindFile(sourceFileInfo);
 
                 this._runEvaluatorWithCancellationToken(token, () => {
@@ -1273,6 +1287,7 @@ export class Program {
     }
 
     private _isImportAllowed(importer: SourceFileInfo, importResult: ImportResult, isImportStubFile: boolean): boolean {
+        console.log('_isImportAllowed 1290', importer.uri.toString(), importResult.importName);
         // Don't import native libs. We don't want to track these files,
         // and we definitely don't want to attempt to parse them.
         if (importResult.isNativeLib) {
@@ -1351,7 +1366,13 @@ export class Program {
         // Get the new list of imports and see if it changed from the last
         // list of imports for this file.
         const imports = sourceFileInfo.sourceFile.getImports();
-
+        // console.log('get imports', imports);
+        // imports is a list of ImportResult objects so i just want to print the importName of all of them
+        // for (const importResult of imports) {
+        //     console.log(
+        //         `Import: ${importResult.importName}, type: ${importResult.importType}, found: ${importResult.isImportFound}`
+        //     );
+        // }
         // Create a local function that determines whether the import should
         // be considered a "third-party import" and whether it is coming from
         // a third-party package that claims to be typed. An import is
@@ -1465,6 +1486,7 @@ export class Program {
         });
 
         const updatedImportMap = new Map<string, SourceFileInfo>();
+        console.log('updatedImportMap', updatedImportMap);
         sourceFileInfo.imports.forEach((importInfo) => {
             const oldFilePath = importInfo.uri;
 
@@ -1485,6 +1507,8 @@ export class Program {
                 // of the program.
                 let importedFileInfo = this.getSourceFileInfo(importInfo.path);
                 if (!importedFileInfo) {
+                    console.log('_updateSourceFileImports, --> newImportPathMap.', 1496);
+
                     const moduleImportInfo = this._getModuleImportInfoForFile(importInfo.path);
                     const sourceFile = this._sourceFileFactory.createSourceFile(
                         this.serviceProvider,
@@ -1559,9 +1583,17 @@ export class Program {
 
         this._sourceFileList.push(fileInfo);
         this._sourceFileMap.set(fileUri.key, fileInfo);
+        // console.log('this._sourceFileMap', this._sourceFileMap);
+        // console.log('this._sourceFileList', this._sourceFileList);
+        // console.log(`[Copilot Debug] Program._addToSourceFileListAndMap: Added file ${fileUri.toString()} to program`);
     }
 
     private _getModuleImportInfoForFile(fileUri: Uri) {
+        // 22013;
+        console.log(
+            '[Copilot Debug] Program._getModuleImportInfoForFile: Getting module import info for\n',
+            fileUri.toString()
+        );
         // We allow illegal module names (e.g. names that include "-" in them)
         // because we want a unique name for each module even if it cannot be
         // imported through an "import" statement. It's important to have a
@@ -1601,6 +1633,7 @@ export class Program {
     }
 
     private _createInterimFileInfo(fileUri: Uri) {
+        console.log('_createInterimFileInfo 1627');
         const moduleImportInfo = this._getModuleImportInfoForFile(fileUri);
         const sourceFile = this._sourceFileFactory.createSourceFile(
             this.serviceProvider,
@@ -1624,6 +1657,8 @@ export class Program {
     }
 
     private _createNewEvaluator() {
+        console.log('[Copilot Debug] Program._createNewEvaluator: Creating new type evaluator');
+        // console.log(this._evaluator);
         if (this._evaluator) {
             // We shouldn't need to call this, but there appears to be a bug
             // in the v8 garbage collector where it's unable to resolve orphaned
@@ -1657,7 +1692,9 @@ export class Program {
         if (!this._isFileNeeded(fileToParse, skipFileNeededCheck) || !fileToParse.sourceFile.isParseRequired()) {
             return;
         }
-        this._console.info(`[Copilot Debug] Program._parseFile: Parsing ${fileToParse.uri.toString()}`);
+        this._console.info(
+            `[program._parse] Program._parseFile: Parsing 1695 program.ts ${fileToParse.uri.toString()}`
+        );
 
         // SourceFile.parse should only be called here in the program, as calling it
         // elsewhere could break the entire dependency graph maintained by the program.
@@ -1698,9 +1735,11 @@ export class Program {
         // Get all of the potential imports for this file.
         const implicitImports: SourceFileInfo[] = [];
         const implicitSet = new Set<string>();
-
+        console.log('inside _bindImplicitImports 1736 ', fileToAnalyze.uri.toString());
         let nextImplicitImport = this._getImplicitImports(fileToAnalyze);
+        // console.log('inside _bindImplicitImports 1738', nextImplicitImport?.imports);
         while (nextImplicitImport) {
+            console.log('inside _bindImplicitImports?? inside while loop 1739', nextImplicitImport.uri.toString());
             const implicitPath = nextImplicitImport.uri;
 
             if (implicitSet.has(implicitPath.key)) {
@@ -1714,7 +1753,7 @@ export class Program {
 
             implicitSet.add(implicitPath.key);
             implicitImports.push(nextImplicitImport);
-
+            console.log('inside _bindImplicitImports 1752', nextImplicitImport.uri.toString());
             this._parseFile(nextImplicitImport, /* content */ undefined, skipFileNeededCheck);
             nextImplicitImport = this._getImplicitImports(nextImplicitImport);
         }
@@ -1723,9 +1762,11 @@ export class Program {
             return;
         }
 
+        // TODO: I dont get get this follwing while loop
         // Reverse order, so top of chain is first.
         let implicitImport = implicitImports.pop();
         while (implicitImport) {
+            console.log('\n\n going to call bind method [_bindImplicitImports] 1769', implicitImport.uri.toString());
             // Bind this file but don't recurse into its imports.
             this._bindFile(implicitImport, /* content */ undefined, skipFileNeededCheck, /* isImplicitImport */ true);
             implicitImport = implicitImports.pop();
@@ -1740,6 +1781,7 @@ export class Program {
         skipFileNeededCheck = false,
         isImplicitImport = false
     ): boolean {
+        console.log('bind file 1778 program.ts ', fileToBind.uri.toString());
         if (!this._isFileNeeded(fileToBind, skipFileNeededCheck) || !fileToBind.sourceFile.isBindingRequired()) {
             return !fileToBind.sourceFile.isBindingRequired();
         }
@@ -1771,8 +1813,13 @@ export class Program {
         if (fileToBind.builtinsImport && fileToBind.builtinsImport !== fileToBind) {
             // Bind all of the implicit imports first. So we don't recurse into them.
             if (!isImplicitImport) {
+                console.log(
+                    'guess is correct , going to call _bindImplicitImports',
+                    'file to bind',
+                    fileToBind.uri.toString()
+                );
                 this._bindImplicitImports(fileToBind);
-
+                console.log('_bindImplicitImports done, going to bind fileToBind', fileToBind.uri.toString());
                 // Binding the implicit imports may indirectly cause the current file to be bound.
                 // If so, return now to avoid "Bind called unnecessarily" assert in sourceFile.bind().
                 if (!fileToBind.sourceFile.isBindingRequired()) {
@@ -1811,7 +1858,6 @@ export class Program {
         options?: LookupImportOptions
     ): ImportLookupResult | undefined => {
         let sourceFileInfo: SourceFileInfo | undefined;
-
         if (Uri.is(fileUriOrModule)) {
             sourceFileInfo = this.getSourceFileInfo(fileUriOrModule);
         } else {
@@ -1869,11 +1915,20 @@ export class Program {
             // Bind the file if it's not already bound. Don't count this time
             // against the type checker.
             timingStats.typeCheckerTime.subtractFromTime(() => {
+                console.log('not u 1887', sourceFileInfo.uri.toString());
                 this._bindFile(sourceFileInfo!, /* content */ undefined, options?.skipFileNeededCheck);
             });
         }
 
         const symbolTable = sourceFileInfo.sourceFile.getModuleSymbolTable();
+        // console.log(' mod symbolTable', symbolTable?.toString());
+        // if (symbolTable) {
+        //     console.log('mod symbolTable contents:');
+        //     symbolTable.forEach((value, key) => {
+        //         console.log(`  ${key}:`, value);
+        //     });
+        // }
+
         if (!symbolTable) {
             return undefined;
         }
@@ -1896,6 +1951,9 @@ export class Program {
     };
 
     private _shouldCheckFile(fileInfo: SourceFileInfo) {
+        if (process.env.PYRIGHT_DEBUG) {
+            console.log('[Copilot Debug] Program._shouldCheckFile: Checking file', fileInfo.uri.toString());
+        }
         // Always do a full checking for a file that's open in the editor.
         if (fileInfo.isOpenByClient) {
             return true;
@@ -1911,6 +1969,7 @@ export class Program {
     }
 
     private _checkTypes(fileToCheck: SourceFileInfo, token: CancellationToken, chainedByList?: SourceFileInfo[]) {
+        console.log('Checking types for file', fileToCheck.uri.toString());
         return this._logTracker.log(`analyzing: ${fileToCheck.uri}`, (logState) => {
             // If the file isn't needed because it was eliminated from the
             // transitive closure or deleted, skip the file rather than wasting
@@ -1942,6 +2001,7 @@ export class Program {
             );
 
             if (!this._disableChecker) {
+                console.log(`🔍 23[CHECK] Checking file ${fileToCheck.uri.toString()}`);
                 // For ipython, make sure we check all its dependent files first since
                 // their results can affect this file's result.
                 const dependentFiles = this._checkDependentFiles(fileToCheck, chainedByList, token);
@@ -1954,6 +2014,14 @@ export class Program {
                 }
 
                 if (boundFile) {
+                    // const preCheckSymbols = fileToCheck.sourceFile.getModuleSymbolTable();
+                    // if (preCheckSymbols) {
+                    //     // console.log(`🔍 [PRE_CHECK] File has ${preCheckSymbols.size} symbols before type checking`);
+                    //     Array.from(preCheckSymbols.keys()).forEach((name) => {
+                    //         console.log(`  • ${name}`);
+                    //     });
+                    // }
+
                     const execEnv = this._configOptions.findExecEnvironment(fileToCheck.uri);
                     fileToCheck.sourceFile.check(
                         this.configOptions,
@@ -2007,13 +2075,18 @@ export class Program {
         chainedByList: SourceFileInfo[] | undefined,
         token: CancellationToken
     ) {
+        // console.log('Checking dependent files for', fileToCheck.uri.toString());
+        // console.log(
+        //     'chainedByList',
+        //     chainedByList?.map((f) => f.uri.toString())
+        // );
         if (fileToCheck.ipythonMode !== IPythonMode.CellDocs) {
             return undefined;
         }
 
         // If we don't have chainedByList, it means none of them are checked yet.
         const needToRunChecker = !chainedByList;
-
+        console.log('1111 before createChainedByList', fileToCheck.uri.toString());
         chainedByList = chainedByList ?? createChainedByList(this, fileToCheck);
         const index = chainedByList.findIndex((v) => v === fileToCheck);
         if (index < 0) {
@@ -2072,6 +2145,7 @@ export class Program {
         closureMap: Map<string, SourceFileInfo>,
         recursionCount: number
     ) {
+        console.log('_getImportsRecursive', file.uri.toString());
         // If the file is already in the closure map, we found a cyclical
         // dependency. Don't recur further.
         const fileUri = file.uri;
@@ -2119,6 +2193,7 @@ export class Program {
         if (sourceFileInfo.sourceFile.isNoCircularDependencyConfirmed()) {
             return false;
         }
+        console.log('_detectAndReportImportCycles', sourceFileInfo.uri.toString());
 
         const fileUri = sourceFileInfo.uri;
 
@@ -2170,6 +2245,10 @@ export class Program {
     }
 
     private _logImportCycle(dependencyChain: SourceFileInfo[]) {
+        console.log(
+            'Logging import cycle',
+            dependencyChain.map((f) => f.uri.toString())
+        );
         const circDep = new CircularDependency();
         dependencyChain.forEach((sourceFileInfo) => {
             circDep.appendPath(sourceFileInfo.uri);

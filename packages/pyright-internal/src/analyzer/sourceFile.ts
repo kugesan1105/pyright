@@ -74,6 +74,7 @@ export enum IPythonMode {
 // A monotonically increasing number used to create unique file IDs.
 let nextUniqueFileId = 1;
 
+// This  class [INVESTIGRAPHO]
 class WriteableData {
     // Number that is incremented every time the diagnostics
     // are updated.
@@ -637,15 +638,16 @@ export class SourceFile {
     // (or at least cancel) prior to calling again. It returns true if a parse
     // was required and false if the parse information was up to date already.
     parse(configOptions: ConfigOptions, importResolver: ImportResolver, content?: string): boolean {
+        console.log(`[SourceFile.parse] Parsing file: ${this._uri.toUserVisibleString()}`);
         return this._logTracker.log(`parsing: ${this._getPathForLogging(this._uri)}`, (logState) => {
             // If the file is already parsed, we can skip.
             if (!this.isParseRequired()) {
                 logState.suppress();
                 return false;
             }
-            this._console.info(
-                `[SourceFile.parse] --- Preparing to parse content for file: ${this._uri.toUserVisibleString()} ---`
-            ); // Your new log line
+            // this._console.info(
+            //     `[SourceFile.parse] --- Preparing to parse content for file: ${this._uri.toUserVisibleString()} ---`
+            // ); // Your new log line
 
             const diagSink = this.createDiagnosticSink();
             let fileContents = this.getOpenFileContents();
@@ -843,6 +845,7 @@ export class SourceFile {
                     const binder = new Binder(fileInfo, configOptions.indexGenerationMode);
                     this._writableData.isBindingInProgress = true;
                     binder.bindModule(this._writableData.parserOutput!.parseTree);
+                    console.log(`[SourceFile.bind] Binder finished for file: ${this._uri.toUserVisibleString()}`);
 
                     // If we're in "test mode" (used for unit testing), run an additional
                     // "test walker" over the parse tree to validate its internal consistency.
@@ -1466,7 +1469,7 @@ export class SourceFile {
         // Use the configuration options to determine the environment zin which
         // this source file will be executed.
         const execEnvironment = configOptions.findExecEnvironment(fileUri);
-        this._console.info(`[Program._parseFile] === Attempting to process file: ${fileUri.toUserVisibleString()} ===`);
+        // this._console.info(`[Program._parseFile] === Attempting to process file: ${fileUri.toUserVisibleString()} ===`);
 
         const parseOptions = new ParseOptions();
         parseOptions.useNotebookMode = useNotebookMode;

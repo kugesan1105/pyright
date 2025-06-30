@@ -39,7 +39,6 @@ interface AnalyzerNodeInfo {
 
     // Information about an import; used for import nodes only.
     importInfo?: ImportResult;
-
     //---------------------------------------------------------------
     // Set by Binder
 

@@ -131,6 +131,22 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "program": "${workspaceFolder}/packages/pyright-internal/node_modules/jest/bin/jest"
+        },
+        {
+            "name": "Pyright Understandfing with main.py",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/packages/pyright/index.js",
+            "args": [
+                "--verbose",
+                "${workspaceRoot}/packages/pyright/main.py"
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "outFiles": [
+                "${workspaceRoot}/packages/pyright/dist/**/*.js"
+            ],
+            "sourceMaps": true,
+            "smartStep": true
         }
     ]
 }

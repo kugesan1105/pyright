@@ -1,0 +1,1000 @@
+ 1011  pytest -s -k test_reference
+ 1012  pytest -s -k test_reference -n 8 
+ 1013  clear
+ 1014  pytest -s -k test_reference -n 8 
+ 1015  clear
+ 1016  pytest -s -k test_reference
+ 1017  pytest -s -k test_reference -n 8 
+ 1018  clear
+ 1019  pytest -s -k test_reference -n 8 
+ 1020  clear
+ 1021  pytest -s -k test_reference -n 8 
+ 1022  clear
+ 1023  pytest -s -k test_reference -n 8 
+ 1024  jac run '/home/kuggix/jaseci/jac/examples/reference/ignore_statements.jac'
+ 1025  python '/home/kuggix/jaseci/jac/examples/reference/ignore_statements.py'
+ 1026  pytest -s -k test_reference -n 8 
+ 1027  clear
+ 1028  pytest -s -k test_reference -n 8 
+ 1029  git pull
+ 1030  clear
+ 1031  pytest -n 8
+ 1032  pytest -s -k test_did_change
+ 1033  clear
+ 1034  pytest '/home/kuggix/jaseci/jac/jaclang/langserve/tests/server_test/test_lang_serve.py'
+ 1035  pre-commit run --all-files
+ 1036  pytest '/home/kuggix/jaseci/jac/jaclang/langserve/tests/server_test/test_lang_serve.py'
+ 1037  clear
+ 1038  pre-commit run --all-files
+ 1039  clear
+ 1040  pre-commit run --all-files
+ 1041  clear
+ 1042  pre-commit run --all-files
+ 1043  clear
+ 1044  pre-commit run --all-files
+ 1045  clear
+ 1046  pre-commit run --all-files
+ 1047  jac/jaclang/compiler/jtyping/types/jfunctionttype.pyclear
+ 1048  clear
+ 1049  pre-commit run --all-files
+ 1050  clear
+ 1051  pre-commit run --all-files
+ 1052  clear
+ 1053  pre-commit run --all-files
+ 1054  clear
+ 1055  pre-commit run --all-files
+ 1056  clear
+ 1057  pre-commit run --all-files
+ 1058  clear
+ 1059  pre-commit run --all-files
+ 1060  clear
+ 1061  pre-commit run --all-files
+ 1062  clear
+ 1063  pre-commit run --all-files
+ 1064  clear
+ 1065  pre-commit run --all-files
+ 1066  clear
+ 1067  pre-commit run --all-files
+ 1068  clear
+ 1069  pre-commit run --all-files
+ 1070  clear
+ 1071  pre-commit run --all-files
+ 1072  clear
+ 1073  pytest -n 8
+ 1074  clear
+ 1075  pytest -s -k test_multifile_workspace
+ 1076  clear
+ 1077  pytest -s -k test_multifile_workspace
+ 1078  clear
+ 1079  pytest -s -k test_multifile_workspace
+ 1080  clear
+ 1081  pytest -s -k test_multifile_workspace
+ 1082  clear
+ 1083  pytest -s -k test_multifile_workspace
+ 1084  clear
+ 1085  pytest -s -k test_multifile_workspace
+ 1086  clear
+ 1087  pytest -s -k test_multifile_workspace
+ 1088  clear
+ 1089  pytest -s -k test_multifile_workspace
+ 1090  clear
+ 1091  pytest -s -k test_multifile_workspace
+ 1092  clear
+ 1093  pytest -s -k test_multifile_workspace
+ 1094  clear
+ 1095  pytest -s -k test_multifile_workspace
+ 1096  code all.txt
+ 1097  pytest -s -k test_multifile_workspace
+ 1098  code all.txt
+ 1099  clear
+ 1100  pytest -s -k test_multifile_workspace
+ 1101  clear
+ 1102  pytest -s -k test_multifile_workspace
+ 1103  pytest  -k test_multifile_workspace
+ 1104  pre-commit run --all-files
+ 1105  clear
+ 1106  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1107  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1108  ros2 topic list
+ 1109  rviz2
+ 1110  rrviz2
+ 1111  rviz2
+ 1112  ros2 launch rtabmap_launch rtabmap.launch.py     rtabmap_args:="--Mem/IncrementalMemory false --Mem/InitWMWithAllNodes true"     load_db:=~/.ros/rtabmap.db     rgb_topic:=/camera/color/image_raw     depth_topic:=/camera/aligned_depth_to_color/image_raw     camera_info_topic:=/camera/color/camera_info     frame_id:=camera_link     odom_frame_id:=odom     approx_sync:=true     subscribe_odom:=true
+ 1113  ros2 launch rtabmap_launch rtabmap.launch.py     rtabmap_args:="--Mem/IncrementalMemory false --Mem/InitWMWithAllNodes true"     load_db:=~/.ros/rtabmap.db     rgb_topic:=/camera/camera/color/image_raw     depth_topic:=/camera/camera/aligned_depth_to_color/image_raw     camera_info_topic:=/camera/camera/color/camera_info     frame_id:=camera_link     odom_frame_id:=odom     approx_sync:=true     subscribe_odom:=true
+ 1114  code .
+ 1115  rtabmap-databaseViewer ~/.ros/rtabmap.db
+ 1116  ros2 run rtabmap_viz rtabmap_viz --database ~/.ros/rtabmap.db
+ 1117  rviz2
+ 1118  lsusb
+ 1119  ros2 launch rtabmap_launch rtabmap.launch.py     rgb_topic:=/camera/camera/color/image_raw    depth_topic:=/camera/camera/aligned_depth_to_color/image_raw    camera_info_topic:=/camera/camera/color/camera_info    approx_sync:=true    approx_sync_max_interval:=0.16    wait_for_transform:=0.2    use_sim_time:=false    qos_image:=1    qos_camera_info:=1    rtabmap_args:="--delete_db_on_start"    frame_id:=camera_link    odom_frame_id:=odom    subscribe_odom:=true
+ 1120  clear
+ 1121  ros2 topic list
+ 1122  ros2 launch realsense2_camera rs_launch.py
+ 1123  lsusb
+ 1124  ros2 launch /home/kuggix/my_realsense_launch.py
+ 1125  clear
+ 1126  ros2 launch rtabmap_launch rtabmap.launch.py     rtabmap_args:="--Mem/IncrementalMemory false --Mem/InitWMWithAllNodes true"     load_db:=~/.ros/rtabmap.db     rgb_topic:=/camera/camera/color/image_raw     depth_topic:=/camera/camera/aligned_depth_to_color/image_raw     camera_info_topic:=/camera/camera/color/camera_info     frame_id:=camera_link     odom_frame_id:=odom     approx_sync:=true     subscribe_odom:=true
+ 1127  ros2 launch rtabmap_launch rtabmap.launch.py     rgb_topic:=/camera/camera/color/image_raw     depth_topic:=/camera/camera/aligned_depth_to_color/image_raw     camera_info_topic:=/camera/camera/color/camera_info     approx_sync:=true     approx_sync_max_interval:=0.15     wait_for_transform:=0.3     use_sim_time:=false     qos_image:=1     qos_camera_info:=1     qos_odom:=1     rtabmap_args:="--delete_db_on_start \
+ 1128                     --Odom/FeatureType 5 \
+ 1129                     --Vis/MinInliers 10 \
+ 1130                     --Odom/MaxFeatures 500"     frame_id:=camera_link     odom_frame_id:=odom     subscribe_odom:=true
+ 1131  clear
+ 1132  rviz2
+ 1133  jac run '/home/kuggix/jaseci/l.jac'
+ 1134  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1135  code mm.txt
+ 1136  clear
+ 1137  jac run '/home/kuggix/jaseci/jac/jaclang/langserve/engine.jac'
+ 1138  clear
+ 1139  python insert_examples.py 
+ 1140  python /home/kuggix/jaseci/insert_examples.py /home/kuggix/jaseci/all_guide.md /home/kuggix/jaseci/jac/examples/reference/
+ 1141  git pull
+ 1142  clear
+ 1143  jac clean
+ 1144  clear
+ 1145  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1146  pip install selanium
+ 1147  pip install selenium
+ 1148  python check.py 
+ 1149  export MOODLE_USERNAME='kugesans.20'
+ 1150  export MOODLE_PASSWORD='</Moodle>123'
+ 1151  clear
+ 1152  echo MOODLE_PASSWORD
+ 1153  echo MOODLE_PASSWORD.value
+ 1154  echo $MOODLE_PASSWORD
+ 1155  clear
+ 1156  python check.py 
+ 1157  google-chrome --version
+ 1158  clear
+ 1159  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1160  /home/kuggix/miniconda3/envs/jac/bin/python
+ 1161  history
+ 1162  export MOODLE_USERNAME='kugesans.20'
+ 1163  export MOODLE_PASSWORD='</Moodle>123'
+ 1164  clear
+ 1165  python check.py 
+ 1166  pip install requests
+ 1167  python check.py 
+ 1168  cclear
+ 1169  clear
+ 1170  python check2.py 
+ 1171  python check
+ 1172  python check.py 
+ 1173  clear
+ 1174  python check2.py 
+ 1175  python check3.py 
+ 1176  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1177  python check3.py 
+ 1178  python check4.py 
+ 1179  clear
+ 1180  python check4.py 
+ 1181  clear
+ 1182  python check4.py 
+ 1183  clear
+ 1184  python check4.py 
+ 1185  clear
+ 1186  python check4.py 
+ 1187  clear
+ 1188  python check4.py 
+ 1189  clear
+ 1190  python check4.py 
+ 1191  clear
+ 1192  cd moodle_file_download/
+ 1193  code .
+ 1194  python automate.py 
+ 1195  cd ../..
+ 1196  cd jaseci/
+ 1197  clear
+ 1198  code .
+ 1199  python ll.py 
+ 1200  cd new_files/
+ 1201  ls
+ 1202  cd ..
+ 1203  python page_counter.py 
+ 1204  pip install PyPDF2
+ 1205  python page_counter.py 
+ 1206  mv ~/jaseci/new_files/ /mnt/c/Users/USER/Downloads/
+ 1207  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1208  ls
+ 1209  cd Documents/
+ 1210  ls
+ 1211  mkdir extension
+ 1212  cd ..
+ 1213  cd webpage/
+ 1214  ls
+ 1215  mkdir extension
+ 1216  cd extension/
+ 1217  code .
+ 1218  clear
+ 1219  code --install-extension "C:\Users\USER\Downloads\Microsoft.VisualStudio.Services.VSIXPackage"
+ 1220  mv ~/webpage/extension/ /mnt/c/Users/USER/Downloads/
+ 1221  cd 
+ 1222  cd webpage/
+ 1223  mkdir extension
+ 1224  cd extension/
+ 1225  git
+ 1226  git checkout main
+ 1227  git checkout type_hell
+ 1228  git branch
+ 1229  clear
+ 1230  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1231  cd jaseci/
+ 1232  code .
+ 1233  cd ..
+ 1234  rm -rf jaseci/
+ 1235  ls
+ 1236  rm frames_2025-06-05_12.26.03.pdf 
+ 1237  ls
+ 1238  rm frames_2025-06-05_13.03.54.pdf 
+ 1239  ls
+ 1240  rm frames_2025-06-05_13.03.54.gv 
+ 1241  ls
+ 1242  rm frames_2025-06-05_12.26.03.gv 
+ 1243  ls
+ 1244  git clone https://github.com/jaseci-labs/jaseci.git
+ 1245  cd jaseci/
+ 1246  clear
+ 1247  code .
+ 1248  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1249  jac check '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/type_check_tests/expressions/bin_expression_err.jac'
+ 1250  git pull
+ 1251  git fetch
+ 1252  jac lsp
+ 1253  pip install -e .
+ 1254  cd jac
+ 1255  pip install -e .
+ 1256  pip uninstall jac-cloud
+ 1257  pip install -e .
+ 1258  jac run '/home/kuggix/jaseci/jac/jaclang/langserve/server.jac'
+ 1259  clea
+ 1260  cd jac
+ 1261  pip install -e .
+ 1262  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1263  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1264  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1265  ls
+ 1266  rm -rf jaseci/
+ 1267  ls
+ 1268  jac
+ 1269  pip uninstall jaclang
+ 1270  ls
+ 1271  conda activate jac
+ 1272  clear
+ 1273  jac
+ 1274  pip uninstall jaclang
+ 1275  clear
+ 1276  jac
+ 1277  clear
+ 1278  history |grep git 
+ 1279  ls
+ 1280  cd jaseci/
+ 1281  code .
+ 1282  python /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1283  python /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1284  clear
+ 1285  conda deactivate
+ 1286  clear
+ 1287  conda deactivate
+ 1288  conda activate jac
+ 1289  clear
+ 1290  git checkout main
+ 1291  clear
+ 1292  git pull
+ 1293  clear
+ 1294  jac check
+ 1295  jac lsp
+ 1296  pip install -e .
+ 1297  jac lsp
+ 1298  clear
+ 1299  jac lsp
+ 1300  clear
+ 1301  conda deactivate
+ 1302  clear
+ 1303  jac lsp
+ 1304  python --version
+ 1305  python3 --version
+ 1306  sudo add-apt-repository ppa:deadsnakes/ppa
+ 1307  clear
+ 1308  python kk.py 
+ 1309  clear
+ 1310  npm 
+ 1311  npm run '/home/kuggix/jaseci/ll.js'
+ 1312  node '/home/kuggix/jaseci/ll.js'
+ 1313  npm install puppeteer
+ 1314  node '/home/kuggix/jaseci/ll.js'
+ 1315  npm install readline-sync
+ 1316  node '/home/kuggix/jaseci/ll.js'
+ 1317  clear
+ 1318  mv bpd_files/ /mnt/c/Users/USER/Downloads/
+ 1319  mv new_files/ /mnt/c/Users/USER/Downloads/
+ 1320  python /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1321  jac clean
+ 1322  clear
+ 1323  jac format '/home/kuggix/jaseci/jac/examples/reference/try_statements.jac'
+ 1324  clear
+ 1325  jac format '/home/kuggix/jaseci/jac/examples/reference/try_statements.jac'
+ 1326  clear
+ 1327  jac format '/home/kuggix/jaseci/jac/examples/reference/try_statements.jac'
+ 1328  clear
+ 1329  git checkout main
+ 1330  clear
+ 1331  git pull
+ 1332  clear
+ 1333  python /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1334  jac run '/home/kuggix/jaseci/package_examples/jacci/runner/runner1.jac'
+ 1335  clear
+ 1336  jac run '/home/kuggix/jaseci/package_examples/jacci/runner/runner1.jac'
+ 1337  clear
+ 1338  jac run '/home/kuggix/jaseci/package_examples/jacci/my_second_project/run.jac'
+ 1339  jac run '/home/kuggix/jaseci/package_examples/jacci/runner/runner2.jac'
+ 1340  clear
+ 1341  jac run '/home/kuggix/jaseci/package_examples/jacci/my_second_project/run.jac'
+ 1342  clear
+ 1343  jac run '/home/kuggix/jaseci/package_examples/jacci/my_second_project/run.jac'
+ 1344  clear
+ 1345  jac run '/home/kuggix/jaseci/package_examples/jacci/my_second_project/run.jac'
+ 1346  clear
+ 1347  conda deactivate
+ 1348  conda activate ajc
+ 1349  c;lear
+ 1350  clear
+ 1351  conda activate jac
+ 1352  clear
+ 1353  jac lsp
+ 1354  clear
+ 1355  python /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1356  cc.jac
+ 1357  code cc.jac
+ 1358  jac run '/home/kuggix/jaseci/cc.jac'
+ 1359  clear
+ 1360  jac run '/home/kuggix/jaseci/cc.jac'
+ 1361  clear
+ 1362  jac run '/home/kuggix/jaseci/cc.jac'
+ 1363  clear
+ 1364  jac run '/home/kuggix/jaseci/cc.jac'
+ 1365  clear
+ 1366  jac run '/home/kuggix/jaseci/cc.jac'
+ 1367  clear
+ 1368  jac run '/home/kuggix/jaseci/cc.jac'
+ 1369  clear
+ 1370  jac run '/home/kuggix/jaseci/cc.jac'
+ 1371  clear
+ 1372  jac run '/home/kuggix/jaseci/cc.jac'
+ 1373  clear
+ 1374  python /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1375  git pull
+ 1376  clear
+ 1377  jac format '/home/kuggix/jaseci/jac/jaclang/langserve/tests/fixtures/base_module_structure.jac'
+ 1378  jac format '/home/kuggix/jaseci/jac/jaclang/langserve/tests/fixtures/base_module_structure.jac' > kk
+ 1379  clear
+ 1380  conda deactivate
+ 1381  conda env list
+ 1382  conda activate agent
+ 1383  clear
+ 1384  npm install -g pyright
+ 1385  code mm.py
+ 1386  pyright mm.py 
+ 1387  time pyright mm.py 
+ 1388  python mm.py 
+ 1389  time pyright mm.py 
+ 1390  conda deactivate conda activate jac
+ 1391  conda deactivate; conda activate jac
+ 1392  pyright
+ 1393  npm install -g pyright
+ 1394  clear
+ 1395  time pyright mm.py 
+ 1396  cd ..
+ 1397  code 
+ 1398  $ ls -la ~/jaseci/.pyright
+ 1399  ls -la ~/jaseci/.pyright
+ 1400  code .
+ 1401  cd jaseci/
+ 1402  ls -la ~/jaseci/.pyright
+ 1403  ls
+ 1404  time pyright mm.py --watch
+ 1405  time pyright mm.py 
+ 1406  code mm.jac
+ 1407  jac run mm.jac 
+ 1408  clear
+ 1409  cd ..
+ 1410  git clone https://github.com/microsoft/pyright.git
+ 1411  clear
+ 1412  cd pyright/
+ 1413  code .
+ 1414  conda deactivate
+ 1415  clear
+ 1416  /bin/python3 /home/kuggix/pyright/packages/pyright/your_python_file.py
+ 1417  conda deactivate
+ 1418  conda activate jac
+ 1419  clear
+ 1420  pip install -e .
+ 1421  ls
+ 1422  cd build/
+ 1423  ls
+ 1424  cd ..\
+ 1425  cd ..
+ 1426  clear
+ 1427  pip install -e .
+ 1428  npm run install:all
+ 1429  cd packages/pyright
+ 1430  npm run build
+ 1431  node index.js --help
+ 1432  node index.js your_python_file.py --project /path/to/your/pyproject.toml
+ 1433  code your_python_file.py
+ 1434  python your_python_file.py 
+ 1435  node index.js your_python_file.py --project /path/to/your/pyproject.toml
+ 1436  node index.js your_python_file.py 
+ 1437  cd ../../..
+ 1438  cd jaseci/
+ 1439  clear
+ 1440  code .
+ 1441  cd packages/pyright
+ 1442  ls
+ 1443  node index.js your_python_file.py
+ 1444  cd ../..
+ 1445  npm install
+ 1446  npm run build
+ 1447  ls
+ 1448  npm run build
+ 1449  npm run install:all
+ 1450  cd packages/pyright
+ 1451  npm run build
+ 1452  node index.js --verbose your_python_file.py
+ 1453  clear
+ 1454  node index.js --verbose your_python_file.py
+ 1455  clear
+ 1456  node index.js --verbose your_python_file.py
+ 1457  npm run build
+ 1458  clear
+ 1459  node index.js --verbose your_python_file.py
+ 1460  clear
+ 1461  node index.js --verbose your_python_file.py
+ 1462  clear
+ 1463  cleAR
+ 1464  CLEAR
+ 1465  clear
+ 1466  cd src/
+ 1467  ls
+ 1468  cd ..
+ 1469  cd typ
+ 1470  ls
+ 1471  cd ..
+ 1472  cd pyright-internal/
+ 1473  cd typeshed-fallback/
+ 1474  ls
+ 1475  clear
+ 1476  ls\
+ 1477  clear
+ 1478  ls
+ 1479  cd packages/
+ 1480  ls
+ 1481  cd pyright
+ 1482  ls
+ 1483  node index.js --verbose your_python_file.py
+ 1484  clear
+ 1485  time node index.js --verbose your_python_file.py
+ 1486  clear
+ 1487  time node index.js --verbose your_python_file.py
+ 1488  code mm.md
+ 1489  code debug_pyright.md
+ 1490  code typecheck_plan.md
+ 1491  time node index.js --verbose your_python_file.py
+ 1492  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1493  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1494  pyright '/home/kuggix/jaseci/jac/examples/manual_code/circle.py'
+ 1495  pip list
+ 1496  time node index.js --verbose your_python_file.py
+ 1497  cd packages/pyright
+ 1498  ls
+ 1499  time node index.js --verbose your_python_file.py
+ 1500  clear
+ 1501  time node index.js --verbose your_python_file.py
+ 1502  clear
+ 1503  time node index.js --verbose your_python_file.py
+ 1504  clear
+ 1505  time node index.js --verbose your_python_file.py
+ 1506  clear
+ 1507  time node index.js --verbose your_python_file.py
+ 1508  clear
+ 1509  time node index.js --verbose your_python_file.py
+ 1510  clear
+ 1511  time node index.js --verbose your_python_file.py
+ 1512  clear
+ 1513  npm run build
+ 1514  time node index.js --verbose your_python_file.py
+ 1515  time node index.js --verbose your_python_file.py > kk
+ 1516  time node index.js --verbose your_python_file.py > kk.txt
+ 1517  git push
+ 1518  npm run build
+ 1519  time node index.js --verbose your_python_file.py > mm.txt
+ 1520  npm run build
+ 1521  time node index.js --verbose your_python_file.py > mm.txt
+ 1522  cd packages/pyright
+ 1523  ls -l packages/pyright-internal/dist/pyright.js
+ 1524  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1525  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1526  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1527  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1528  jac build '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/hello.jac'
+ 1529  cd packages/pyright
+ 1530  time node index.js --verbose your_python_file.py > mm.txt
+ 1531  clear
+ 1532  cd packages/pyright
+ 1533  npm run build
+ 1534  time node index.js --verbose your_python_file.py > mm.txt
+ 1535  npm run build
+ 1536  time node index.js --verbose your_python_file.py > mm.txt
+ 1537  npm run build
+ 1538  time node index.js --verbose your_python_file.py > mm.txt
+ 1539  npm run build
+ 1540  time node index.js --verbose your_python_file.py > mm.txt
+ 1541  clear
+ 1542  code main.py
+ 1543  code a.py
+ 1544  code b.py
+ 1545  code c.py
+ 1546  time node index.js --verbose main.py 
+ 1547  time node index.js --verbose main.py > main.txt
+ 1548  code dell.md
+ 1549  time node index.js --verbose main.py > main.txt
+ 1550  clear
+ 1551  time node index.js --verbose main.py > main.txt
+ 1552  npm run build
+ 1553  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1554  python '/home/kuggix/jaseci/jac/examples/reference/import_include_statements.py'
+ 1555  jac run '/home/kuggix/jaseci/jac/examples/reference/base_module_structure.jac'
+ 1556  cd packages/pyright
+ 1557  ls
+ 1558  time node index.js --verbose main.py > main.txt
+ 1559  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1560  jac run "/home/kuggix/jaseci/mm.jac"
+ 1561  cd docs/
+ 1562  ls
+ 1563  mkdocs serve
+ 1564  pip install mkdocs
+ 1565  mkdocs serve
+ 1566  pip install mkdocs-material
+ 1567  jac run "/home/kuggix/jaseci/mm.jac"
+ 1568  jac run '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/backward_edge_visit.jac'
+ 1569  jac dot '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/backward_edge_visit.jac'
+ 1570  jac run '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/backward_edge_visit.jac'
+ 1571  jac dot '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/backward_edge_visit.jac'
+ 1572  jac run '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/backward_edge_visit.jac'
+ 1573  jac run "/home/kuggix/jaseci/mm.jac"
+ 1574  mkdocs serve
+ 1575  pip install mkdocs-open-in-new-tab
+ 1576  mkdocs serve
+ 1577  pip install mkdocs-video
+ 1578  jac run "/home/kuggix/jaseci/mm.jac"
+ 1579  code kk.jac
+ 1580  rm -rf kk.jac 
+ 1581  git pull
+ 1582  git push
+ 1583  cd ..
+ 1584  pre-commit run --all-files
+ 1585  git push
+ 1586  jac lsp
+ 1587  clear
+ 1588  conda deactivate
+ 1589  jac lsp
+ 1590  conda activate jac
+ 1591  clear
+ 1592  jac lsp
+ 1593  clear
+ 1594  git pull
+ 1595  git fetch
+ 1596  git pull
+ 1597  code mm.jac
+ 1598  clear
+ 1599  gh
+ 1600  conda install gh --channel conda-forge	
+ 1601  find ~ -type d -name "bin" -exec test -e "{}/activate" \; -print
+ 1602  clear
+ 1603  ls ~/.virtualenvs/
+ 1604  gh auth login
+ 1605  clear
+ 1606  gh copilot explain "git"
+ 1607  gh explain "git"
+ 1608  clear
+ 1609  code main.py
+ 1610  python main.py 
+ 1611  clear
+ 1612  python main.py 
+ 1613  jac slp
+ 1614  jac lsp
+ 1615  clear
+ 1616  python main.py 
+ 1617  code main.py 
+ 1618  python main.py 
+ 1619  mkdir outter
+ 1620  cd outter/
+ 1621  code .
+ 1622  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1623  python '/home/kuggix/jaseci/outter/main.py'
+ 1624  clear
+ 1625  conda activate jac
+ 1626  clear
+ 1627  python '/home/kuggix/jaseci/outter/main.py'
+ 1628  ls
+ 1629  clear
+ 1630  ls
+ 1631  python '/home/kuggix/jaseci/outter/main.py'
+ 1632  clear
+ 1633  ls
+ 1634  python main.py 
+ 1635  clear
+ 1636  ls
+ 1637  python main.py 
+ 1638  ls
+ 1639  clear
+ 1640  ls
+ 1641  python main.py 
+ 1642  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1643  conda activate jac
+ 1644  python main.py 
+ 1645  clear
+ 1646  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1647  python main.py 
+ 1648  clear
+ 1649  python main.py 
+ 1650  cd ..
+ 1651  code .
+ 1652  cd ..
+ 1653  code .
+ 1654  cd ..
+ 1655  cd pyright/
+ 1656  code .
+ 1657  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1658  clear
+ 1659  git stash
+ 1660  clear
+ 1661  git pull
+ 1662  clear
+ 1663  git pull
+ 1664  clear
+ 1665  jac dot '/home/kuggix/jaseci/jac/examples/data_spatial/define_walker.jac'
+ 1666  clear
+ 1667  git pull
+ 1668  clear
+ 1669  jac run '/home/kuggix/jaseci/main.py'
+ 1670  python '/home/kuggix/jaseci/main.py'
+ 1671  git pull
+ 1672  clear
+ 1673  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1674  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1675  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.6.1-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1676  code import_resol.md
+ 1677  code sample.py
+ 1678  jac build '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/hello.jac'
+ 1679  cd /home/kuggix/jaseci/jac/jaclang/compiler/passes/main
+ 1680  clear
+ 1681  code dep_solve_pass.py
+ 1682  jac jac2py '/home/kuggix/jaseci/jac/examples/reference/import_include_statements.jac'
+ 1683  jac build '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/hello.jac'
+ 1684  cd ../../..
+ 1685  clear
+ 1686  cd ..
+ 1687  clear
+ 1688  cd ..
+ 1689  clear
+ 1690  code k.py
+ 1691  code c.py
+ 1692  code d.py
+ 1693  code e.py
+ 1694  clear
+ 1695  jac build main.jac 
+ 1696  clear
+ 1697  jac build main.jac 
+ 1698  clear
+ 1699  jac build main.jac 
+ 1700  clear
+ 1701  jac build main.jac 
+ 1702  clear
+ 1703  jac build main.jac 
+ 1704  clear
+ 1705  jac build main.jac 
+ 1706  clear
+ 1707  jac build main.jac 
+ 1708  clear
+ 1709  jac build main.jac 
+ 1710  clear
+ 1711  jac build main.jac 
+ 1712  clear
+ 1713  jac build main.jac 
+ 1714  clear
+ 1715  jac build main.jac 
+ 1716  jac run '/home/kuggix/jaseci/main.jac'
+ 1717  code dummy.jac
+ 1718  jac run '/home/kuggix/jaseci/main.jac'
+ 1719  clear
+ 1720  jac run '/home/kuggix/jaseci/main.jac'
+ 1721  clear
+ 1722  jac run '/home/kuggix/jaseci/main.jac'
+ 1723  clear
+ 1724  jac run '/home/kuggix/jaseci/main.jac'
+ 1725  clear
+ 1726  jac run '/home/kuggix/jaseci/main.jac'
+ 1727  clear
+ 1728  jac run '/home/kuggix/jaseci/main.jac'
+ 1729  clear
+ 1730  jac run '/home/kuggix/jaseci/main.jac'
+ 1731  clear
+ 1732  jac run '/home/kuggix/jaseci/main.jac'
+ 1733  clear
+ 1734  jac run '/home/kuggix/jaseci/main.jac'
+ 1735  clear
+ 1736  jac build main.j
+ 1737  jac build main.jac 
+ 1738  clear
+ 1739  jac build main.jac 
+ 1740  code f.py
+ 1741  clear
+ 1742  code f.py
+ 1743  jac build main.jac 
+ 1744  code f.pyA
+ 1745  clear
+ 1746  jac build main.jac 
+ 1747  jac build main.jac \
+ 1748  jac build main.jac 
+ 1749  jac build main.jac \
+ 1750  clear
+ 1751  jac build main.jac 
+ 1752  clear
+ 1753  jac build main.jac 
+ 1754  clear
+ 1755  jac build main.jac 
+ 1756  clear
+ 1757  jac build main.jac 
+ 1758  clear
+ 1759  jac build main.jac 
+ 1760  clear
+ 1761  jac build main.jac 
+ 1762  clear
+ 1763  jac build main.jac 
+ 1764  clear
+ 1765  jac build main.jac 
+ 1766  clear
+ 1767  jac build main.jac 
+ 1768  clear
+ 1769  jac build main.jac 
+ 1770  clear
+ 1771  jac build main.jac 
+ 1772  cd jac/jaclang/compiler/passes/main/
+ 1773  ls
+ 1774  cd ..
+ 1775  ls
+ 1776  cd ..
+ 1777  ls
+ 1778  cd jtyping/
+ 1779  ls
+ 1780  cd typeshed/
+ 1781  ls
+ 1782  cd stdlib/
+ 1783  ls 
+ 1784  cd ..
+ 1785  ls stubs/
+ 1786  cd ../../..
+ 1787  cd ../../
+ 1788  clear
+ 1789  jac build main.jac 
+ 1790  time jac build main.jac 
+ 1791  clear
+ 1792  cd jac/jaclang/compiler/
+ 1793  ls
+ 1794  cd jtyping/
+ 1795  cd typeshed/A
+ 1796  cd stdlib/
+ 1797  ls | head -n 5
+ 1798  cd ../stubs/
+ 1799  ls | head -n 5
+ 1800  cd ../../../..
+ 1801  cd ../../..
+ 1802  cd jaseci/
+ 1803  clear
+ 1804  time jac build main.jac 
+ 1805  clear
+ 1806  time jac build main.jac 
+ 1807  clear
+ 1808  time jac build main.jac 
+ 1809  clear
+ 1810  time jac build main.jac 
+ 1811  clear
+ 1812  time jac build main.jac 
+ 1813  clear
+ 1814  time jac build main.jac 
+ 1815  clear
+ 1816  time jac build main.jac 
+ 1817  clear
+ 1818  time jac build main.jac 
+ 1819  cd jac/jaclang/compiler/
+ 1820  cd jtyping/
+ 1821  cd typeshed/
+ 1822  cd stubs/
+ 1823  cd requests
+ 1824  ls
+ 1825  cd requests/
+ 1826  ls
+ 1827  cd ../../../
+ 1828  cd stdlib/
+ 1829  ls
+ 1830  ls |grep rand
+ 1831  clear
+ 1832  cd ..
+ 1833  cd stdlib/
+ 1834  ls |grep builtins.pyi 
+ 1835  cd ../..//../.
+ 1836  cd ../../..
+ 1837  clear
+ 1838  time jac build main.jac 
+ 1839  time jac build main.jac  > ippa.txt
+ 1840  time jac build main.jac  > ippa2.txt
+ 1841  cd /home/kuggix/jaseci/jac/jaclang/compiler/jtyping/typeshed/stdlib/collections/_collections_abc.pyi
+ 1842  cd '/home/kuggix/jaseci/jac/jaclang/compiler/jtyping/typeshed/stdlib/collections/_collections_abc.pyi'
+ 1843  ls '/home/kuggix/jaseci/jac/jaclang/compiler/jtyping/typeshed/stdlib/collections/_collections_abc.pyi'
+ 1844  time jac build main.jac  > ippa2.txt
+ 1845  ls '/home/kuggix/jaseci/jac/jaclang/compiler/jtyping/typeshed/stdlib/collections/_collections_abc.pyi'
+ 1846  time jac build main.jac  > ippa2.txt
+ 1847  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1848  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1849  history
+ 1850  time node index.js --verbose main.py
+ 1851  cd packages/pyright
+ 1852  clear
+ 1853  time node index.js --verbose main.py
+ 1854  time node index.js --verbose main.py > del.txt
+ 1855  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1856  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1857  pre-commit run --all-files
+ 1858  history
+ 1859  pre-commit run --all-files
+ 1860  jac run '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/entry_exit.jac'
+ 1861  jac run '/home/kuggix/jaseci/main.jac'
+ 1862  ls '/home/kuggix/jaseci/jac/jaclang/compiler/jtyping/typeshed/stdlib/collections/_collections_abc.pyi'
+ 1863  time jac build main.jac  > ippa2.txt
+ 1864  ls '/home/kuggix/jaseci/jac/jaclang/compiler/jtyping/typeshed/stdlib/collections/_collections_abc.pyi'
+ 1865  time jac build main.jac  > ippa2.txt
+ 1866  cclear
+ 1867  clear
+ 1868  git pull
+ 1869  clear
+ 1870  time jac build '/home/kuggix/jaseci/jac/jaclang/compiler/tests/jtyping/fixtures/main.jac'
+ 1871  time jac build '/home/kuggix/jaseci/jac/jaclang/compiler/tests/jtyping/fixtures/main.jac' > conv.txt
+ 1872  clear
+ 1873  cd docs/
+ 1874  mkdocs serve
+ 1875  cd ..
+ 1876  clear
+ 1877  git pull
+ 1878  git merge main
+ 1879  git pull
+ 1880  git push
+ 1881  code main.jac
+ 1882  jac run main.j
+ 1883  jac run main.jac 
+ 1884  jac run main.j
+ 1885  jac run main.jac 
+ 1886  pre-commit run --all-files
+ 1887  jac run main.jac 
+ 1888  jac run '/home/kuggix/jaseci/jac/jaclang/compiler/passes/main/tests/fixtures/autoimpl.jac'
+ 1889  jac run main.jac 
+ 1890  jac run '/home/kuggix/jaseci/jac/jaclang/compiler/passes/main/tests/fixtures/autoimpl.jac'
+ 1891  jac run main.jac 
+ 1892  jac run '/home/kuggix/jaseci/jac/jaclang/compiler/passes/main/tests/fixtures/autoimpl.jac'
+ 1893  jac run main.jac 
+ 1894  jac run '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/entry_exit.jac'
+ 1895  jac run main.jac 
+ 1896  jac run '/home/kuggix/jaseci/jac/jaclang/tests/fixtures/entry_exit.jac'
+ 1897  jac run '/home/kuggix/jaseci/jac/examples/data_spatial/filtering.jac'
+ 1898  clear
+ 1899  jac run '/home/kuggix/jaseci/jac/examples/data_spatial/filtering.jac'
+ 1900  clear
+ 1901  jac run '/home/kuggix/jaseci/jac/examples/data_spatial/filtering.jac'
+ 1902  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1903  jac jac2py '/home/kuggix/jaseci/a.jac'
+ 1904  sudo apt update
+ 1905  clear
+ 1906  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1907  pre-commit run --all-files
+ 1908  jac run a.jac 
+ 1909  clear
+ 1910  jac format '/home/kuggix/jaseci/a.jac'
+ 1911  git stash
+ 1912  clear
+ 1913  git checkout type_02
+ 1914  clear
+ 1915  jac run '/home/kuggix/jaseci/jac/jaclang/compiler/tests/jtyping/fixtures/main.jac'
+ 1916  clear
+ 1917  jac build '/home/kuggix/jaseci/jac/jaclang/compiler/tests/jtyping/fixtures/main.jac'
+ 1918  jac build '/home/kuggix/jaseci/jac/jaclang/compiler/tests/jtyping/fixtures/main.jac' > dep.py
+ 1919  jac build '/home/kuggix/jaseci/jac/jaclang/compiler/tests/jtyping/fixtures/main.jac' > dep.txt
+ 1920  clear
+ 1921  jac build '/home/kuggix/jaseci/jac/jaclang/compiler/tests/jtyping/fixtures/main.jac' > dep.txt
+ 1922  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1923  conda activate jac
+ 1924  clear
+ 1925  npm run dev
+ 1926  npm install
+ 1927  npm run dev
+ 1928  DATABASE_URL="file:./dev.db"
+ 1929  npm run dev
+ 1930  clear
+ 1931  cd ..
+ 1932  rm -rf removeme_now/
+ 1933  conda deactivate
+ 1934  cd ..
+ 1935  cd remove_me_now
+ 1936  mkdir removeme_now
+ 1937  cd removeme_now/
+ 1938  git clone https://github.com/Lainitha/Dionysus.git
+ 1939  conda deactivate
+ 1940  conda activate jac
+ 1941  clear
+ 1942  cd Dionysus/
+ 1943  npm install
+ 1944  code .
+ 1945  conda deactivate
+ 1946  conda activate jac
+ 1947  clear
+ 1948  python ll.py 
+ 1949  /bin/python3 /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/printEnvVariablesToFile.py /home/kuggix/.vscode-server/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/bash/envVars.txt
+ 1950  pip install pypdf
+ 1951  cd ..
+ 1952  ls
+ 1953  cd ..
+ 1954  ls
+ 1955  cd mnt/
+ 1956  ls
+ 1957  cd c/
+ 1958  ls
+ 1959  cd Users/
+ 1960  ls
+ 1961  cd USER/
+ 1962  ls
+ 1963  cd Downloads/
+ 1964  cd ..
+ 1965  ls
+ 1966  cd USER/
+ 1967  ls
+ 1968  cd ..
+ 1969  cd ../..
+ 1970  ls
+ 1971  cd ..
+ 1972  ls
+ 1973  cd ..
+ 1974  ls
+ 1975  cd mnt/
+ 1976  ls
+ 1977  cd c/
+ 1978  ls
+ 1979  cd U
+ 1980  cd Users/
+ 1981  ls
+ 1982  cd USER/
+ 1983  ls
+ 1984  cd Downloads/
+ 1985  ls
+ 1986  cd print/
+ 1987  ls
+ 1988  python ll.py 
+ 1989  pip install pypdf
+ 1990  python ll.py 
+ 1991  conda activate jac
+ 1992  python ll.py 
+ 1993  pip install pypdf
+ 1994  python ll.py 
+ 1995  which python
+ 1996  which pip
+ 1997  python
+ 1998  (jac) python -m pip install pypdf
+ 1999  python -m pip install pypdf
+ 2000  code .
+ 2001  history
+ 2002  cd packages/
+ 2003  ls
+ 2004  cd pyright
+ 2005  time node index.js --verbose main.py
+ 2006  time node index.js --verbose main.py --watch
+ 2007  clear
+ 2008  time node index.js --verbose main.py --watch > realtime.txt
+ 2009  history 
+ 2010  history  > allcommands.txt
